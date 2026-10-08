@@ -3,7 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: jorgebarcena_dev
+    container_name: ${CONTAINER_NAME:-jorgebarcena_dev}
     restart: always
     ports:
       - "${PORT:-6688}:6688"
