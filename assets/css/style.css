@@ -64,12 +64,15 @@ html {
   color-scheme: dark;
   scroll-behavior: smooth;
   scroll-padding-top: 90px;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
   background-color: var(--bg-primary);
   color: var(--text-main);
   line-height: 1.6;
+  max-width: 100%;
   overflow-x: hidden;
   min-height: 100vh;
 }
@@ -94,6 +97,11 @@ button, input, select, textarea {
   font-family: inherit;
   font-size: inherit;
   color: inherit;
+}
+
+code {
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 ::selection {
@@ -464,7 +472,7 @@ button, input, select, textarea {
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 440px) {
   .header-cta-text {
     display: none;
   }
@@ -1731,10 +1739,11 @@ button, input, select, textarea {
     justify-content: flex-start;
     overflow-x: auto;
     flex-wrap: nowrap;
-    padding: 0.35rem 0.5rem 0.75rem;
-    margin: 1.5rem -1rem 2rem;
+    padding: 0.35rem 0.25rem 0.75rem;
+    margin: 1.5rem 0 2rem;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
+    max-width: 100%;
   }
   .portfolio-filter-bar::-webkit-scrollbar {
     display: none;
@@ -2685,8 +2694,9 @@ button, input, select, textarea {
     bottom: 1rem;
     left: 1rem;
     right: 1rem;
-    max-width: 100%;
+    max-width: calc(100vw - 2rem);
     align-items: center;
+    box-sizing: border-box;
   }
   .toast {
     max-width: 100% !important;
@@ -3039,8 +3049,16 @@ button, input, select, textarea {
   color: #a7f3d0;
   margin-top: 1rem;
   display: flex;
-  align-items: center;
-  gap: 0.65rem;
+  align-items: flex-start;
+  gap: 0.75rem;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.legal-note-box i {
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+  font-size: 1rem;
 }
 
 /* Rejilla de derechos RGPD */
@@ -3218,6 +3236,8 @@ button, input, select, textarea {
     left: 0.75rem;
     right: 0.75rem;
     padding: 1.15rem;
+    max-width: calc(100vw - 1.5rem);
+    box-sizing: border-box;
   }
   .cookie-banner-actions {
     flex-direction: column;
