@@ -227,7 +227,7 @@ button, input, select, textarea {
   backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border-subtle);
   position: sticky;
-  top: 36px;
+  top: 0;
   z-index: 90;
   transition: all var(--transition-normal);
 }
