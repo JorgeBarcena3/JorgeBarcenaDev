@@ -81,9 +81,9 @@ docker compose logs -f
 │   ├── css/
 │   │   └── style.css            # Estilos CSS, diseño responsive y temas
 │   ├── images/
-│   │   ├── favicon.ico          # Favicon
-│   │   ├── jorge-frontal.jpg    # Fotografía frontal de Jorge
-│   │   └── jorge-profile.jpg    # Fotografía de perfil principal
+│   │   ├── favicon.svg          # Favicon moderno SVG / ICO / PNG
+│   │   ├── jorge.png            # Fotografía profesional de Jorge Bárcena
+│   │   └── portfolio/           # Capturas de proyectos en producción
 │   └── js/
 │       └── main.js              # Validación, toast, menú móvil y formulario
 ├── contacto/                    # Almacenamiento de solicitudes (.txt)
