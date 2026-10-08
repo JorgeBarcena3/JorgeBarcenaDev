@@ -252,5 +252,5 @@ app.use((err, req, res, next) => {
 // Inicio del Servidor
 // ============================================
 app.listen(PORT, () => {
-  console.log(`✓ Servidor JorgeBarcenaDev activo en http://localhost:${PORT} [${isProd ? 'production' : 'development'}]`);
+  console.log(`✓ Servidor dev.jorgebarcena.es activo en http://localhost:${PORT} [${isProd ? 'production' : 'development'}]`);
 });
