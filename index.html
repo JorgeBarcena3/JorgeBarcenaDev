@@ -99,6 +99,7 @@
       <nav class="nav-desktop" aria-label="Navegación principal">
         <ul class="nav-links">
           <li><a href="#servicios" class="nav-link">Servicios</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
           <li><a href="#propuesta" class="nav-link">Por qué trabajar conmigo</a></li>
           <li><a href="#stack" class="nav-link">Tecnologías</a></li>
           <li><a href="#proceso" class="nav-link">Proceso</a></li>
@@ -127,6 +128,7 @@
     <div class="mobile-nav" id="mobileNav">
       <ul class="mobile-nav-links">
         <li><a href="#servicios" class="mobile-link">Servicios a medida</a></li>
+        <li><a href="#portfolio" class="mobile-link">Portfolio de Proyectos</a></li>
         <li><a href="#propuesta" class="mobile-link">Propuesta de valor</a></li>
         <li><a href="#stack" class="mobile-link">Stack & Tecnologías</a></li>
         <li><a href="#proceso" class="mobile-link">Metodología de trabajo</a></li>
@@ -170,9 +172,9 @@
               <i class="fa-solid fa-comments"></i>
               <span>Cuéntame tu proyecto</span>
             </a>
-            <a href="#servicios" class="btn btn-secondary btn-lg">
-              <i class="fa-solid fa-layer-group"></i>
-              <span>Ver qué puedo hacer por ti</span>
+            <a href="#portfolio" class="btn btn-secondary btn-lg">
+              <i class="fa-solid fa-laptop-code"></i>
+              <span>Ver Portfolio &amp; Casos Reales</span>
             </a>
           </div>
 
@@ -381,6 +383,423 @@
               <li><i class="fa-solid fa-check"></i> Acompañamiento en el lanzamiento a producción</li>
             </ul>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- PORTFOLIO / PROYECTOS DESTACADOS                         -->
+    <!-- ======================================================== -->
+    <section class="section portfolio-section" id="portfolio">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-badge">
+            <i class="fa-solid fa-laptop-code text-cyan"></i>
+            <span>Portfolio &amp; Casos de Producción</span>
+          </div>
+          <h2 class="section-title">Soluciones de Software Construidas para Clientes Reales</h2>
+          <p class="section-subtitle">
+            Plataformas web, sistemas de reservas, comunidades interactivas y productos digitales desarrollados con más de 6 años de experiencia en ingeniería de software.
+          </p>
+        </div>
+
+        <!-- Filtros interactivos de categoría -->
+        <div class="portfolio-filter-bar" role="tablist" aria-label="Filtrar proyectos del portfolio">
+          <button type="button" class="portfolio-filter-btn active" data-filter="all" role="tab" aria-selected="true">
+            <i class="fa-solid fa-border-all"></i>
+            <span>Todos los Proyectos</span>
+            <span class="filter-count">6</span>
+          </button>
+          <button type="button" class="portfolio-filter-btn" data-filter="saas" role="tab" aria-selected="false">
+            <i class="fa-solid fa-cloud"></i>
+            <span>Plataformas &amp; SaaS</span>
+          </button>
+          <button type="button" class="portfolio-filter-btn" data-filter="booking" role="tab" aria-selected="false">
+            <i class="fa-solid fa-ticket"></i>
+            <span>Ticketing &amp; Eventos</span>
+          </button>
+          <button type="button" class="portfolio-filter-btn" data-filter="cultura" role="tab" aria-selected="false">
+            <i class="fa-solid fa-compact-disc"></i>
+            <span>Música &amp; Cultura</span>
+          </button>
+          <button type="button" class="portfolio-filter-btn" data-filter="media" role="tab" aria-selected="false">
+            <i class="fa-solid fa-palette"></i>
+            <span>UX/UI &amp; Multimedia</span>
+          </button>
+        </div>
+
+        <!-- Grid de Proyectos del Portfolio -->
+        <div class="portfolio-grid" id="portfolioGrid">
+
+          <!-- 1. NosApetece (nosaptc.com) -->
+          <article class="portfolio-card" data-category="saas" tabindex="0">
+            <div class="portfolio-card-glow"></div>
+            <div class="portfolio-card-header">
+              <div class="portfolio-type-badge">
+                <span class="badge-dot"></span>
+                <span>Plataforma Musical · SaaS</span>
+              </div>
+              <a href="https://nosaptc.com" target="_blank" rel="noopener noreferrer" class="portfolio-domain-pill" title="Visitar nosaptc.com en vivo">
+                <i class="fa-solid fa-globe"></i>
+                <span>nosaptc.com</span>
+                <i class="fa-solid fa-arrow-up-right-from-square external-icon"></i>
+              </a>
+            </div>
+
+            <div class="portfolio-card-body">
+              <div class="portfolio-icon-brand">
+                <i class="fa-solid fa-guitar"></i>
+              </div>
+              <h3 class="portfolio-title">
+                <a href="https://nosaptc.com" target="_blank" rel="noopener noreferrer">NosApetece</a>
+              </h3>
+              <p class="portfolio-desc">
+                Plataforma colaborativa para la industria de la música en vivo en España. Conecta artistas, bandas emergentes y salas de conciertos, centralizando la gestión de bolos, el catálogo de recintos y asesoría jurídica especializada.
+              </p>
+
+              <div class="portfolio-highlights">
+                <div class="highlight-bullet">
+                  <i class="fa-solid fa-check text-cyan"></i>
+                  <span>Directorio y gestión centralizada de bolos y salas</span>
+                </div>
+                <div class="highlight-bullet">
+                  <i class="fa-solid fa-check text-cyan"></i>
+                  <span>Perfiles interactivos de artistas y asesoría jurídica</span>
+                </div>
+                <div class="highlight-bullet">
+                  <i class="fa-solid fa-check text-cyan"></i>
+                  <span>Arquitectura API modular para soporte de picos de eventos</span>
+                </div>
+              </div>
+
+              <div class="portfolio-tags">
+                <span class="ptag">Node.js</span>
+                <span class="ptag">Express</span>
+                <span class="ptag">React</span>
+                <span class="ptag">PostgreSQL</span>
+                <span class="ptag">REST API</span>
+                <span class="ptag">Docker</span>
+              </div>
+            </div>
+
+            <div class="portfolio-card-footer">
+              <a href="https://nosaptc.com" target="_blank" rel="noopener noreferrer" class="btn btn-portfolio-link">
+                <span>Visitar nosaptc.com</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- 2. Cloob (cloob.com) -->
+          <article class="portfolio-card" data-category="saas" tabindex="0">
+            <div class="portfolio-card-glow"></div>
+            <div class="portfolio-card-header">
+              <div class="portfolio-type-badge">
+                <span class="badge-dot"></span>
+                <span>Red Social · Comunidad</span>
+              </div>
+              <a href="https://cloob.com" target="_blank" rel="noopener noreferrer" class="portfolio-domain-pill" title="Visitar cloob.com en vivo">
+                <i class="fa-solid fa-globe"></i>
+                <span>cloob.com</span>
+                <i class="fa-solid fa-arrow-up-right-from-square external-icon"></i>
+              </a>
+            </div>
+
+            <div class="portfolio-card-body">
+              <div class="portfolio-icon-brand">
+                <i class="fa-solid fa-users-rays"></i>
+              </div>
+              <h3 class="portfolio-title">
+                <a href="https://cloob.com" target="_blank" rel="noopener noreferrer">Cloob</a>
+              </h3>
+              <p class="portfolio-desc">
+                Plataforma social de alta escala orientada a interacción comunitaria, perfiles dinámicos y mensajería fluida. Diseñada con arquitectura de microservicios y persistencia optimizada para flujos intensivos de usuarios concurrentes.
+              </p>
+
+              <div class="portfolio-highlights">
+                <div class="highlight-bullet">
+                  <i class="fa-solid fa-check text-cyan"></i>
+                  <span>Arquitectura preparada para alta concurrencia y tráfico masivo</span>
+                </div>
+                <div class="highlight-bullet">
+                  <i class="fa-solid fa-check text-cyan"></i>
+                  <span>Interacción en tiempo real y feeds dinámicos de contenido</span>
+                </div>
+                <div class="highlight-bullet">
+                  <i class="fa-solid fa-check text-cyan"></i>
+                  <span>Caché distribuida en memoria y latencia mínima de respuesta</span>
+                </div>
+              </div>
+
+              <div class="portfolio-tags">
+                <span class="ptag">Node.js</span>
+                <span class="ptag">WebSockets</span>
+                <span class="ptag">Redis</span>
+                <span class="ptag">Microservicios</span>
+                <span class="ptag">High Concurrency</span>
+              </div>
+            </div>
+
+            <div class="portfolio-card-footer">
+              <a href="https://cloob.com" target="_blank" rel="noopener noreferrer" class="btn btn-portfolio-link">
+                <span>Visitar cloob.com</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- 3. Silla De Más (sillademas.com) -->
+          <article class="portfolio-card" data-category="booking" tabindex="0">
+            <div class="portfolio-card-glow"></div>
+            <div class="portfolio-card-header">
+              <div class="portfolio-type-badge">
+                <span class="badge-dot"></span>
+                <span>Ticketing · Booking &amp; Eventos</span>
+              </div>
+              <a href="https://sillademas.com" target="_blank" rel="noopener noreferrer" class="portfolio-domain-pill" title="Visitar sillademas.com en vivo">
+                <i class="fa-solid fa-globe"></i>
+                <span>sillademas.com</span>
+                <i class="fa-solid fa-arrow-up-right-from-square external-icon"></i>
+              </a>
+            </div>
+
+            <div class="portfolio-card-body">
+              <div class="portfolio-icon-brand">
+                <i class="fa-solid fa-chair"></i>
+              </div>
+              <h3 class="portfolio-title">
+                <a href="https://sillademas.com" target="_blank" rel="noopener noreferrer">Silla De Más</a>
+              </h3>
+              <p class="portfolio-desc">
+                Web y plataforma de gestión integral para la destacada compañía de improvisación teatral y eventos corporativos en Madrid. Catálogo de shows, sistema automatizado de ticketing y módulo de contratación B2B para empresas.
+              </p>
+
+              <div class="portfolio-highlights">
+                <div class="highlight-bullet">
+                  <i class="fa-solid fa-check text-cyan"></i>
+                  <span>Ticketing online automatizado y gestión en tiempo real de aforo</span>
+                </div>
+                <div class="highlight-bullet">
+                  <i class="fa-solid fa-check text-cyan"></i>
+                  <span>Canal B2B de solicitud y presupuesto para eventos corporativos</span>
+                </div>
+                <div class="highlight-bullet">
+                  <i class="fa-solid fa-check text-cyan"></i>
+                  <span>Integración de pagos seguros con Stripe y pasarelas bancarias</span>
+                </div>
+              </div>
+
+              <div class="portfolio-tags">
+                <span class="ptag">Full-Stack</span>
+                <span class="ptag">Stripe</span>
+                <span class="ptag">Booking Engine</span>
+                <span class="ptag">SEO Local</span>
+                <span class="ptag">Responsive UI</span>
+              </div>
+            </div>
+
+            <div class="portfolio-card-footer">
+              <a href="https://sillademas.com" target="_blank" rel="noopener noreferrer" class="btn btn-portfolio-link">
+                <span>Visitar sillademas.com</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- 4. Jorge Bárcena — UX/UI (jorgebarcena.com) -->
+          <article class="portfolio-card" data-category="media" tabindex="0">
+            <div class="portfolio-card-glow"></div>
+            <div class="portfolio-card-header">
+              <div class="portfolio-type-badge">
+                <span class="badge-dot"></span>
+                <span>Diseño de Producto · UX/UI</span>
+              </div>
+              <a href="https://jorgebarcena.com" target="_blank" rel="noopener noreferrer" class="portfolio-domain-pill" title="Visitar jorgebarcena.com en vivo">
+                <i class="fa-solid fa-globe"></i>
+                <span>jorgebarcena.com</span>
+                <i class="fa-solid fa-arrow-up-right-from-square external-icon"></i>
+              </a>
+            </div>
+
+            <div class="portfolio-card-body">
+              <div class="portfolio-icon-brand">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </div>
+              <h3 class="portfolio-title">
+                <a href="https://jorgebarcena.com" target="_blank" rel="noopener noreferrer">Jorge Bárcena — UX/UI</a>
+              </h3>
+              <p class="portfolio-desc">
+                Portfolio y showcase centrado en diseño de producto digital, arquitectura de información, diseño centrado en el usuario (UCD) y sistemas visuales (Design Systems) creados para maximizar usabilidad, conversión y estética moderna.
+              </p>
+
+              <div class="portfolio-highlights">
+                <div class="highlight-bullet">
+                  <i class="fa-solid fa-check text-cyan"></i>
+                  <span>Metodología de diseño basada en investigación y validación de usuarios</span>
+                </div>
+                <div class="highlight-bullet">
+                  <i class="fa-solid fa-check text-cyan"></i>
+                  <span>Definición de tokens visuales y sistemas de diseño escalables</span>
+                </div>
+                <div class="highlight-bullet">
+                  <i class="fa-solid fa-check text-cyan"></i>
+                  <span>Auditorías exhaustivas de accesibilidad (WCAG 2.1) e interacción</span>
+                </div>
+              </div>
+
+              <div class="portfolio-tags">
+                <span class="ptag">UX Research</span>
+                <span class="ptag">UI Design</span>
+                <span class="ptag">Design Systems</span>
+                <span class="ptag">Figma</span>
+                <span class="ptag">WCAG a11y</span>
+              </div>
+            </div>
+
+            <div class="portfolio-card-footer">
+              <a href="https://jorgebarcena.com" target="_blank" rel="noopener noreferrer" class="btn btn-portfolio-link">
+                <span>Visitar jorgebarcena.com</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- 5. Inés Alba (inesalba.es) -->
+          <article class="portfolio-card" data-category="media" tabindex="0">
+            <div class="portfolio-card-glow"></div>
+            <div class="portfolio-card-header">
+              <div class="portfolio-type-badge">
+                <span class="badge-dot"></span>
+                <span>Web Oficial · Multimedia</span>
+              </div>
+              <a href="https://inesalba.es" target="_blank" rel="noopener noreferrer" class="portfolio-domain-pill" title="Visitar inesalba.es en vivo">
+                <i class="fa-solid fa-globe"></i>
+                <span>inesalba.es</span>
+                <i class="fa-solid fa-arrow-up-right-from-square external-icon"></i>
+              </a>
+            </div>
+
+            <div class="portfolio-card-body">
+              <div class="portfolio-icon-brand">
+                <i class="fa-solid fa-clapperboard"></i>
+              </div>
+              <h3 class="portfolio-title">
+                <a href="https://inesalba.es" target="_blank" rel="noopener noreferrer">Inés Alba</a>
+              </h3>
+              <p class="portfolio-desc">
+                Sitio web oficial y portfolio audiovisual para Inés Alba (actriz, doblaje en Netflix, HBO, AppleTV, Movistar+ y cantante). Catálogo de proyectos audiovisuales, videobook interactivo y muestras de doblaje de alta fidelidad.
+              </p>
+
+              <div class="portfolio-highlights">
+                <div class="highlight-bullet">
+                  <i class="fa-solid fa-check text-cyan"></i>
+                  <span>Reproductores de audio/vídeo con precarga asíncrona optimizada</span>
+                </div>
+                <div class="highlight-bullet">
+                  <i class="fa-solid fa-check text-cyan"></i>
+                  <span>Diseño editorial elegante adaptado a directores de casting y agencias</span>
+                </div>
+                <div class="highlight-bullet">
+                  <i class="fa-solid fa-check text-cyan"></i>
+                  <span>Puntuación máxima en Core Web Vitals y tiempos de carga instantáneos</span>
+                </div>
+              </div>
+
+              <div class="portfolio-tags">
+                <span class="ptag">Frontend Moderno</span>
+                <span class="ptag">Audio/Video</span>
+                <span class="ptag">Core Web Vitals</span>
+                <span class="ptag">SEO Artístico</span>
+                <span class="ptag">Mobile First</span>
+              </div>
+            </div>
+
+            <div class="portfolio-card-footer">
+              <a href="https://inesalba.es" target="_blank" rel="noopener noreferrer" class="btn btn-portfolio-link">
+                <span>Visitar inesalba.es</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- 6. Malvadas Ardillas (malvadasardillas.com) -->
+          <article class="portfolio-card" data-category="cultura" tabindex="0">
+            <div class="portfolio-card-glow"></div>
+            <div class="portfolio-card-header">
+              <div class="portfolio-type-badge">
+                <span class="badge-dot"></span>
+                <span>Sello Discográfico · Productora</span>
+              </div>
+              <a href="https://malvadasardillas.com" target="_blank" rel="noopener noreferrer" class="portfolio-domain-pill" title="Visitar malvadasardillas.com en vivo">
+                <i class="fa-solid fa-globe"></i>
+                <span>malvadasardillas.com</span>
+                <i class="fa-solid fa-arrow-up-right-from-square external-icon"></i>
+              </a>
+            </div>
+
+            <div class="portfolio-card-body">
+              <div class="portfolio-icon-brand">
+                <i class="fa-solid fa-record-vinyl"></i>
+              </div>
+              <h3 class="portfolio-title">
+                <a href="https://malvadasardillas.com" target="_blank" rel="noopener noreferrer">Malvadas Ardillas</a>
+              </h3>
+              <p class="portfolio-desc">
+                Plataforma y catálogo digital para el sello discográfico y productora cultural independiente. Gestión de proyectos de artistas, lanzamientos discográficos, reproductores de música integrados y venta/difusión de espectáculos en vivo.
+              </p>
+
+              <div class="portfolio-highlights">
+                <div class="highlight-bullet">
+                  <i class="fa-solid fa-check text-cyan"></i>
+                  <span>Catálogo modular de artistas y discografía con streaming directo</span>
+                </div>
+                <div class="highlight-bullet">
+                  <i class="fa-solid fa-check text-cyan"></i>
+                  <span>Integración de reproductores de audio y plataformas digitales</span>
+                </div>
+                <div class="highlight-bullet">
+                  <i class="fa-solid fa-check text-cyan"></i>
+                  <span>Plataforma escalable para gestión ágil de contenidos y eventos</span>
+                </div>
+              </div>
+
+              <div class="portfolio-tags">
+                <span class="ptag">Web Platform</span>
+                <span class="ptag">Audio Streaming</span>
+                <span class="ptag">CMS Modular</span>
+                <span class="ptag">Tailwind CSS</span>
+                <span class="ptag">SEO Cultural</span>
+              </div>
+            </div>
+
+            <div class="portfolio-card-footer">
+              <a href="https://malvadasardillas.com" target="_blank" rel="noopener noreferrer" class="btn btn-portfolio-link">
+                <span>Visitar malvadasardillas.com</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Banner de llamada a la acción en portfolio -->
+        <div class="portfolio-bottom-banner">
+          <div class="portfolio-bottom-content">
+            <div class="badge-pill">
+              <i class="fa-solid fa-code text-cyan"></i>
+              <span>¿Tienes un proyecto en mente?</span>
+            </div>
+            <h3 class="bottom-banner-title">Construyamos la herramienta o plataforma que tu negocio necesita</h3>
+            <p class="bottom-banner-text">
+              Desde la conceptualización y diseño de la arquitectura hasta el desarrollo completo y despliegue final en producción.
+            </p>
+          </div>
+          <div class="portfolio-bottom-action">
+            <a href="#contacto" class="btn btn-primary btn-lg">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Solicitar propuesta sin compromiso</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -826,6 +1245,7 @@
         <h4>Navegación</h4>
         <ul>
           <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#propuesta">Propuesta de Valor</a></li>
           <li><a href="#stack">Tecnologías</a></li>
           <li><a href="#proceso">Metodología</a></li>
