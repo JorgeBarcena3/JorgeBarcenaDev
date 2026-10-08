@@ -18,11 +18,12 @@
   <meta property="og:image" content="https://dev.jorgebarcena.es/assets/images/jorge.png" />
   <meta property="og:url" content="https://dev.jorgebarcena.es" />
 
-  <!-- Favicon Moderno & Multi-resolución -->
-  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png" />
-  <link rel="alternate icon" type="image/x-icon" href="assets/images/favicon.ico" />
+  <!-- Favicon Moderno & Multi-resolución con Cache Busting -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg?v=4" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png?v=4" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png?v=4" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico?v=4" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=4" />
 
   <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -81,11 +82,10 @@
         <ul class="nav-links">
           <li><a href="#servicios" class="nav-link">Servicios</a></li>
           <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-          <li><a href="#propuesta" class="nav-link">Por qué trabajar conmigo</a></li>
-          <li><a href="#stack" class="nav-link">Tecnologías</a></li>
+          <li><a href="#propuesta" class="nav-link">Propuesta</a></li>
+          <li><a href="#stack" class="nav-link">Stack</a></li>
           <li><a href="#proceso" class="nav-link">Proceso</a></li>
           <li><a href="#doble-faceta" class="nav-link">Doble Faceta</a></li>
-          <li><a href="#contacto" class="nav-link nav-contact-highlight">Contacto</a></li>
         </ul>
       </nav>
 
@@ -93,7 +93,8 @@
       <div class="header-actions">
         <div class="status-badge" title="Actualmente evaluando y aceptando nuevos proyectos">
           <span class="status-indicator"></span>
-          <span class="status-text">Disponible para proyectos</span>
+          <span class="status-text-full">Disponible para proyectos</span>
+          <span class="status-text-short">Disponible</span>
         </div>
         <a href="#contacto" class="btn btn-primary btn-sm">
           <span>Hablemos</span>
