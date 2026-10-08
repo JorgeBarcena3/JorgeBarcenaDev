@@ -231,4 +231,36 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+  // ============================================
+  // 7. Filtros Interactivos del Portfolio
+  // ============================================
+  const filterButtons = document.querySelectorAll('.portfolio-filter-btn');
+  const portfolioCards = document.querySelectorAll('.portfolio-card');
+
+  if (filterButtons.length && portfolioCards.length) {
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.getAttribute('data-filter') || 'all';
+
+        // Actualizar estado activo en botones
+        filterButtons.forEach(b => {
+          b.classList.remove('active');
+          b.setAttribute('aria-selected', 'false');
+        });
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+
+        // Filtrar tarjetas del portfolio
+        portfolioCards.forEach(card => {
+          const category = card.getAttribute('data-category');
+          if (filter === 'all' || category === filter) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      });
+    });
+  }
 });
