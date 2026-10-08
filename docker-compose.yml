@@ -10,6 +10,9 @@ services:
     environment:
       - PORT=6688
       - NODE_ENV=production
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN:-}
+      - TELEGRAM_CHAT_ID=${TELEGRAM_CHAT_ID:-}
+      - TELEGRAM_THREAD_ID=${TELEGRAM_THREAD_ID:-}
     volumes:
       - ./contacto:/app/contacto
     healthcheck:

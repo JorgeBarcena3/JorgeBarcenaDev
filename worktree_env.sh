@@ -173,12 +173,26 @@ cmd_create() {
 
     # Configurar archivo .env aislado
     local target_env="$target_dir/.env"
+    local t_token=""
+    local t_chat=""
+    local t_thread=""
+    if [ -f "$MAIN_REPO_DIR/.env" ]; then
+        t_token=$(grep -E '^TELEGRAM_BOT_TOKEN=' "$MAIN_REPO_DIR/.env" 2>/dev/null | cut -d'=' -f2- || true)
+        t_chat=$(grep -E '^TELEGRAM_CHAT_ID=' "$MAIN_REPO_DIR/.env" 2>/dev/null | cut -d'=' -f2- || true)
+        t_thread=$(grep -E '^TELEGRAM_THREAD_ID=' "$MAIN_REPO_DIR/.env" 2>/dev/null | cut -d'=' -f2- || true)
+    fi
+
     cat <<EOF > "$target_env"
 # Variables de Entorno del Worktree Aislado
 PORT=$free_port
 NODE_ENV=production
 CONTAINER_NAME=jorgebarcena_dev_${slug_docker}
 COMPOSE_PROJECT_NAME=jorgebarcenadev_${slug_docker}
+
+# Notificaciones a Telegram
+TELEGRAM_BOT_TOKEN=${t_token}
+TELEGRAM_CHAT_ID=${t_chat}
+TELEGRAM_THREAD_ID=${t_thread}
 EOF
 
     echo -e "${GREEN}[OK]${RESET} Entorno aislado configurado correctamente."
