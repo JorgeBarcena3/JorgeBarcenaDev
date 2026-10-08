@@ -3,20 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jorge Bárcena — Ingeniero de Software & Consultor Tecnológico</title>
-  <meta name="description" content="Desarrollador de software con más de 6 años de experiencia creando soluciones personalizadas, aplicaciones web escalables y arquitecturas robustas para empresas y proyectos." />
-  <meta name="keywords" content="Jorge Bárcena, Desarrollador de Software, Full Stack Developer, Soluciones Personalizadas, Node.js, React, PostgreSQL, Stripe, Madrid, Consultoría Tecnológica" />
+  <title>Jorge Bárcena — Ingeniero de Software & Consultor Tecnológico | Soluciones a Medida</title>
+  <meta name="description" content="Ingeniero de software con más de 6 años de experiencia creando soluciones tecnológicas personalizadas, plataformas web escalables, arquitecturas backend y pasarelas de pago seguras. Disponible para proyectos y empresas." />
+  <meta name="keywords" content="Jorge Bárcena, Ingeniero de Software, Consultor Tecnológico, Soluciones a Medida, Full Stack Developer, Desarrollo Web, Node.js, Express, React, PostgreSQL, Stripe, SaaS, Cloud, Madrid" />
   <meta name="author" content="Jorge Bárcena" />
-  <meta name="robots" content="index, follow" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="theme-color" content="#030712" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="format-detection" content="telephone=no" />
 
-  <link rel="canonical" href="https://dev.jorgebarcena.es" />
+  <link rel="canonical" href="https://dev.jorgebarcena.es/" />
+  <link rel="manifest" href="/site.webmanifest" />
 
-  <!-- Open Graph / Redes Sociales -->
-  <meta property="og:type" content="profile" />
-  <meta property="og:title" content="Jorge Bárcena — Ingeniero de Software & Soluciones a Medida" />
-  <meta property="og:description" content="+6 años creando soluciones de software a medida para empresas y proyectos. Arquitectura escalable, APIs, frontend moderno y automatizaciones." />
+  <!-- Open Graph / Redes Sociales (Facebook, LinkedIn, Discord, etc.) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Jorge Bárcena — Software Engineer" />
+  <meta property="og:title" content="Jorge Bárcena — Ingeniero de Software & Consultor Tecnológico" />
+  <meta property="og:description" content="+6 años creando soluciones de software a medida para empresas y proyectos. Arquitectura escalable, APIs, frontend moderno y plataformas robustas." />
+  <meta property="og:url" content="https://dev.jorgebarcena.es/" />
   <meta property="og:image" content="https://dev.jorgebarcena.es/assets/images/jorge.png" />
-  <meta property="og:url" content="https://dev.jorgebarcena.es" />
+  <meta property="og:image:secure_url" content="https://dev.jorgebarcena.es/assets/images/jorge.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="1200" />
+  <meta property="og:image:alt" content="Jorge Bárcena — Ingeniero de Software y Consultor Tecnológico" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:locale" content="es_ES" />
+
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Jorge Bárcena — Ingeniero de Software & Consultor Tecnológico" />
+  <meta name="twitter:description" content="+6 años de experiencia creando soluciones de software personalizadas, plataformas web escalables y arquitecturas robustas." />
+  <meta name="twitter:image" content="https://dev.jorgebarcena.es/assets/images/jorge.png" />
+  <meta name="twitter:image:alt" content="Jorge Bárcena — Ingeniero de Software" />
 
   <!-- Favicon Moderno & Multi-resolución con Cache Busting -->
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg?v=4" />
@@ -36,31 +55,117 @@
   <!-- Estilos Principales -->
   <link rel="stylesheet" href="assets/css/style.css" />
 
-  <!-- Structured Data JSON-LD -->
+  <!-- Structured Data JSON-LD (Graph con WebSite, Person y ProfessionalService) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Jorge Bárcena",
-    "jobTitle": "Senior Software Engineer & Tech Consultant",
-    "description": "Desarrollador de software con más de 6 años de experiencia creando soluciones tecnológicas personalizadas para empresas.",
-    "email": "j.barcenalumbreras@gmail.com",
-    "url": "https://dev.jorgebarcena.es",
-    "sameAs": [
-      "https://jorgebarcena.es",
-      "https://github.com/JorgeBarcena3",
-      "https://www.instagram.com/soyjorgebarcena"
-    ],
-    "knowsAbout": [
-      "Software Development",
-      "Full-Stack Web Development",
-      "Node.js",
-      "Express",
-      "React",
-      "PostgreSQL",
-      "Docker",
-      "Stripe Integration",
-      "Custom Software Solutions"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://dev.jorgebarcena.es/#website",
+        "url": "https://dev.jorgebarcena.es/",
+        "name": "Jorge Bárcena — Software Engineer",
+        "description": "Portfolio y servicios de desarrollo de software a medida y consultoría tecnológica.",
+        "inLanguage": "es-ES",
+        "publisher": {
+          "@id": "https://dev.jorgebarcena.es/#person"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://dev.jorgebarcena.es/#person",
+        "name": "Jorge Bárcena",
+        "jobTitle": "Senior Software Engineer & Tech Consultant",
+        "description": "Ingeniero de software con más de 6 años de experiencia creando soluciones tecnológicas personalizadas, arquitecturas robustas y aplicaciones web escalables.",
+        "image": "https://dev.jorgebarcena.es/assets/images/jorge.png",
+        "email": "j.barcenalumbreras@gmail.com",
+        "url": "https://dev.jorgebarcena.es/",
+        "sameAs": [
+          "https://jorgebarcena.es",
+          "https://github.com/JorgeBarcena3",
+          "https://www.instagram.com/soyjorgebarcena"
+        ],
+        "knowsAbout": [
+          "Software Engineering",
+          "Full-Stack Web Development",
+          "Node.js",
+          "Express",
+          "React",
+          "PostgreSQL",
+          "Docker",
+          "Stripe Integration",
+          "Custom Software Solutions",
+          "REST APIs",
+          "Web Performance Optimization",
+          "Technical Architecture Consulting"
+        ]
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://dev.jorgebarcena.es/#service",
+        "name": "Jorge Bárcena — Desarrollo de Software & Consultoría Tecnológica",
+        "url": "https://dev.jorgebarcena.es/",
+        "image": "https://dev.jorgebarcena.es/assets/images/jorge.png",
+        "description": "Servicios especializados de desarrollo web a medida, arquitectura de software escalable, pasarelas de pago y consultoría tecnológica.",
+        "priceRange": "€€",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Madrid",
+          "addressRegion": "Comunidad de Madrid",
+          "addressCountry": "ES"
+        },
+        "areaServed": [
+          {
+            "@type": "Country",
+            "name": "España"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Remoto Internacional"
+          }
+        ],
+        "founder": {
+          "@id": "https://dev.jorgebarcena.es/#person"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Servicios de Desarrollo Tecnológico",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Desarrollo Web & Plataformas SaaS a Medida",
+                "description": "Aplicaciones y paneles de administración construidos desde cero según la lógica de tu negocio."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "APIs, Backend & Arquitecturas Escalables",
+                "description": "Servicios rápidos y seguros con Node.js, Express y bases de datos relacionales PostgreSQL."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Integraciones de Pago & Monetización (Stripe)",
+                "description": "Suscripciones recurrentes, checkout seguro, webhooks automatizados y facturación conforme a normativa."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Consultoría Técnica & Mentoría de Arquitectura",
+                "description": "Diagnóstico de rendimiento, auditoría técnica, seguridad y escalabilidad tecnológica."
+              }
+            }
+          ]
+        }
+      }
     ]
   }
   </script>
@@ -193,11 +298,11 @@
               <div class="terminal-body">
                 <div class="profile-card-top">
                   <div class="avatar-frame">
-                    <img src="assets/images/jorge.png" alt="Jorge Bárcena — Desarrollador de Software" class="profile-photo" />
+                    <img src="assets/images/jorge.png" alt="Jorge Bárcena — Desarrollador de Software" class="profile-photo" width="76" height="76" fetchpriority="high" />
                     <span class="avatar-badge" title="Full Stack">JS/TS</span>
                   </div>
                   <div class="profile-quick-info">
-                    <h3 class="profile-name">Jorge Bárcena</h3>
+                    <div class="profile-name">Jorge Bárcena</div>
                     <p class="profile-role">Software Engineer & Solution Builder</p>
                     <div class="profile-tags">
                       <span class="tag">Madrid, ES</span>
@@ -431,7 +536,7 @@
             </div>
 
             <a href="https://nosaptc.com" target="_blank" rel="noopener noreferrer" class="portfolio-thumbnail-wrap" tabindex="-1" aria-hidden="true">
-              <img src="assets/images/portfolio/nosaptc.png" alt="Captura de pantalla de NosApetece (nosaptc.com)" class="portfolio-thumbnail" loading="lazy" />
+              <img src="assets/images/portfolio/nosaptc.png" alt="Captura de pantalla de NosApetece (nosaptc.com)" class="portfolio-thumbnail" width="600" height="375" loading="lazy" decoding="async" />
               <div class="portfolio-thumbnail-overlay">
                 <span class="preview-badge"><i class="fa-solid fa-arrow-up-right-from-square"></i> nosaptc.com</span>
               </div>
@@ -497,7 +602,7 @@
             </div>
 
             <a href="https://cloobfootball.com/" target="_blank" rel="noopener noreferrer" class="portfolio-thumbnail-wrap" tabindex="-1" aria-hidden="true">
-              <img src="assets/images/portfolio/cloob.png" alt="Captura de pantalla de CLOOB Football (cloobfootball.com)" class="portfolio-thumbnail" loading="lazy" />
+              <img src="assets/images/portfolio/cloob.png" alt="Captura de pantalla de CLOOB Football (cloobfootball.com)" class="portfolio-thumbnail" width="600" height="375" loading="lazy" decoding="async" />
               <div class="portfolio-thumbnail-overlay">
                 <span class="preview-badge"><i class="fa-solid fa-arrow-up-right-from-square"></i> cloobfootball.com</span>
               </div>
@@ -563,7 +668,7 @@
             </div>
 
             <a href="https://sillademas.com" target="_blank" rel="noopener noreferrer" class="portfolio-thumbnail-wrap" tabindex="-1" aria-hidden="true">
-              <img src="assets/images/portfolio/sillademas.png" alt="Captura de pantalla de Silla De Más (sillademas.com)" class="portfolio-thumbnail" loading="lazy" />
+              <img src="assets/images/portfolio/sillademas.png" alt="Captura de pantalla de Silla De Más (sillademas.com)" class="portfolio-thumbnail" width="600" height="375" loading="lazy" decoding="async" />
               <div class="portfolio-thumbnail-overlay">
                 <span class="preview-badge"><i class="fa-solid fa-arrow-up-right-from-square"></i> sillademas.com</span>
               </div>
@@ -628,7 +733,7 @@
             </div>
 
             <a href="https://jorgebarcena.es" target="_blank" rel="noopener noreferrer" class="portfolio-thumbnail-wrap" tabindex="-1" aria-hidden="true">
-              <img src="assets/images/portfolio/jorgebarcena.png" alt="Captura de pantalla de Jorge Bárcena (jorgebarcena.es)" class="portfolio-thumbnail" loading="lazy" />
+              <img src="assets/images/portfolio/jorgebarcena.png" alt="Captura de pantalla de Jorge Bárcena (jorgebarcena.es)" class="portfolio-thumbnail" width="600" height="375" loading="lazy" decoding="async" />
               <div class="portfolio-thumbnail-overlay">
                 <span class="preview-badge"><i class="fa-solid fa-arrow-up-right-from-square"></i> jorgebarcena.es</span>
               </div>
@@ -693,7 +798,7 @@
             </div>
 
             <a href="https://inesalba.es" target="_blank" rel="noopener noreferrer" class="portfolio-thumbnail-wrap" tabindex="-1" aria-hidden="true">
-              <img src="assets/images/portfolio/inesalba.png" alt="Captura de pantalla de Inés Alba (inesalba.es)" class="portfolio-thumbnail" loading="lazy" />
+              <img src="assets/images/portfolio/inesalba.png" alt="Captura de pantalla de Inés Alba (inesalba.es)" class="portfolio-thumbnail" width="600" height="375" loading="lazy" decoding="async" />
               <div class="portfolio-thumbnail-overlay">
                 <span class="preview-badge"><i class="fa-solid fa-arrow-up-right-from-square"></i> inesalba.es</span>
               </div>
@@ -758,7 +863,7 @@
             </div>
 
             <a href="https://malvadasardillas.com" target="_blank" rel="noopener noreferrer" class="portfolio-thumbnail-wrap" tabindex="-1" aria-hidden="true">
-              <img src="assets/images/portfolio/malvadasardillas.png" alt="Captura de pantalla de Malvadas Ardillas (malvadasardillas.com)" class="portfolio-thumbnail" loading="lazy" />
+              <img src="assets/images/portfolio/malvadasardillas.png" alt="Captura de pantalla de Malvadas Ardillas (malvadasardillas.com)" class="portfolio-thumbnail" width="600" height="375" loading="lazy" decoding="async" />
               <div class="portfolio-thumbnail-overlay">
                 <span class="preview-badge"><i class="fa-solid fa-arrow-up-right-from-square"></i> malvadasardillas.com</span>
               </div>
@@ -1080,7 +1185,7 @@
 
           <div class="dual-feature-image-wrapper">
             <div class="dual-photo-card">
-              <img src="assets/images/jorge.png" alt="Jorge Bárcena — Actor e Ingeniero" class="dual-photo" />
+              <img src="assets/images/jorge.png" alt="Jorge Bárcena — Actor e Ingeniero de Software" class="dual-photo" width="480" height="600" loading="lazy" decoding="async" />
               <div class="dual-photo-badge">
                 <span class="badge-tag">🎭 Actor & Improvisador</span>
                 <span class="badge-sub">Formado en interpretación teatral</span>
@@ -1220,6 +1325,23 @@
                   <div class="form-error" id="messageError"></div>
                 </div>
 
+                <!-- Consentimiento RGPD -->
+                <div class="form-group form-consent-group">
+                  <label class="form-checkbox-label" for="privacyConsent">
+                    <input type="checkbox" id="privacyConsent" name="privacyConsent" class="form-checkbox" required />
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">
+                      He leído y acepto la <a href="/privacidad" target="_blank" rel="noopener noreferrer" class="legal-link">Política de Privacidad</a> y el tratamiento de mis datos para gestionar mi consulta. <span class="required">*</span>
+                    </span>
+                  </label>
+                  <div class="form-error" id="privacyError"></div>
+                </div>
+
+                <!-- Primera capa informativa RGPD -->
+                <div class="form-privacy-note">
+                  <p><i class="fa-solid fa-lock text-cyan"></i> <strong>Protección de datos:</strong> Responsable: Jorge Bárcena Lumbreras (NIF/CIF por determinar). Finalidad: Atender tu consulta técnica y presupuesto. Legitimación: Consentimiento expreso. Destinatarios: Sin cesión a terceros. Derechos: Acceso, rectificación, supresión en <a href="mailto:j.barcenalumbreras@gmail.com" class="legal-link">j.barcenalumbreras@gmail.com</a>. Consulta la <a href="/privacidad" target="_blank" rel="noopener noreferrer" class="legal-link">Política de Privacidad</a>.</p>
+                </div>
+
                 <!-- Botón de Envío -->
                 <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
                   <span class="btn-text">
@@ -1281,6 +1403,16 @@
       </div>
 
       <div class="footer-nav">
+        <h4>Información Legal</h4>
+        <ul>
+          <li><a href="/aviso-legal">Aviso Legal</a></li>
+          <li><a href="/privacidad">Política de Privacidad</a></li>
+          <li><a href="/cookies">Política de Cookies</a></li>
+          <li><a href="#" id="openCookieSettingsFooter">Configurar Cookies</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav">
         <h4>Faceta Artística</h4>
         <ul>
           <li><a href="https://jorgebarcena.es" target="_blank" rel="noopener noreferrer">🎭 Web Oficial (jorgebarcena.es)</a></li>
@@ -1293,13 +1425,17 @@
 
     <div class="container footer-bottom">
       <div class="footer-copy">
-        &copy; <span id="currentYear">2026</span> Jorge Bárcena — dev.jorgebarcena.es. Todos los derechos reservados.
+        &copy; <span id="currentYear">2026</span> Jorge Bárcena Lumbreras (NIF/CIF: Por determinar). Todos los derechos reservados.
       </div>
       <div class="footer-tagline">
-        Hecho con código limpio, arquitectura sólida y pasión por la tecnología.
+        Hecho con código limpio, arquitectura sólida y compromiso de privacidad.
       </div>
     </div>
   </footer>
+
+  <!-- Modal y Banner de Cookies RGPD/ePrivacy -->
+  <div id="cookieConsentBanner" class="cookie-banner hidden" role="region" aria-label="Aviso de cookies"></div>
+  <div id="cookieModalOverlay" class="cookie-modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="cookieModalTitle"></div>
 
   <!-- Toast Notification Container -->
   <div class="toast-container" id="toastContainer" aria-live="polite"></div>

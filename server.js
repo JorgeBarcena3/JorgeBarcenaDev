@@ -1,6 +1,7 @@
 'use strict';
 
 const express = require('express');
+const compression = require('compression');
 const path = require('path');
 const fs = require('fs');
 
@@ -9,7 +10,12 @@ const PORT = process.env.PORT || 6688;
 const isProd = process.env.NODE_ENV === 'production';
 
 // ============================================
-// Cabeceras de Seguridad
+// Compresión HTTP (Gzip/Brotli) para Optimización Core Web Vitals
+// ============================================
+app.use(compression());
+
+// ============================================
+// Cabeceras de Seguridad y SEO
 // ============================================
 app.use((req, res, next) => {
   res.setHeader('X-Content-Type-Options', 'nosniff');
@@ -24,19 +30,68 @@ app.use((req, res, next) => {
 });
 
 // ============================================
+// Redirecciones Canónicas (SEO 301)
+// ============================================
+app.use((req, res, next) => {
+  if (req.path === '/index.html') {
+    return res.redirect(301, '/');
+  }
+  if (req.path === '/privacidad.html') {
+    return res.redirect(301, '/privacidad');
+  }
+  if (req.path === '/aviso-legal.html') {
+    return res.redirect(301, '/aviso-legal');
+  }
+  if (req.path === '/cookies.html') {
+    return res.redirect(301, '/cookies');
+  }
+  next();
+});
+
+// ============================================
+// Rutas SEO Especiales (Robots, Sitemap, Manifest)
+// ============================================
+app.get('/robots.txt', (req, res) => {
+  res.type('text/plain');
+  res.setHeader('Cache-Control', 'public, max-age=86400');
+  res.sendFile(path.join(__dirname, 'robots.txt'));
+});
+
+app.get('/sitemap.xml', (req, res) => {
+  res.type('application/xml');
+  res.setHeader('Cache-Control', 'public, max-age=86400');
+  res.sendFile(path.join(__dirname, 'sitemap.xml'));
+});
+
+app.get('/site.webmanifest', (req, res) => {
+  res.type('application/manifest+json');
+  res.setHeader('Cache-Control', 'public, max-age=604800');
+  res.sendFile(path.join(__dirname, 'site.webmanifest'));
+});
+
+// ============================================
 // Parseo de Body
 // ============================================
 app.use(express.json({ limit: '32kb' }));
 app.use(express.urlencoded({ extended: true, limit: '32kb' }));
 
 // ============================================
-// Archivos Estáticos
+// Archivos Estáticos con Cache-Control Inteligente
 // ============================================
 app.use(express.static(path.join(__dirname), {
   maxAge: isProd ? '7d' : '0',
   etag: true,
   index: 'index.html',
-  dotfiles: 'deny'
+  dotfiles: 'deny',
+  setHeaders: (res, filePath) => {
+    if (filePath.endsWith('.html')) {
+      res.setHeader('Cache-Control', isProd ? 'public, max-age=3600, must-revalidate' : 'no-cache');
+    } else if (filePath.match(/\.(png|jpg|jpeg|gif|svg|ico|webp|woff2|woff|ttf)$/)) {
+      res.setHeader('Cache-Control', isProd ? 'public, max-age=2592000, immutable' : 'no-cache');
+    } else if (filePath.match(/\.(css|js)$/)) {
+      res.setHeader('Cache-Control', isProd ? 'public, max-age=604800, stale-while-revalidate=86400' : 'no-cache');
+    }
+  }
 }));
 
 // ============================================
@@ -81,9 +136,13 @@ setInterval(() => {
 // Endpoint API de Contacto (/contacto)
 // ============================================
 app.post('/contacto', rateLimitContact, (req, res) => {
-  const { name, email, projectType, budget, message, date } = req.body;
+  const { name, email, projectType, budget, message, date, privacyConsent } = req.body;
 
   // Validaciones
+  if (!privacyConsent) {
+    return res.status(400).json({ ok: false, error: 'Debes aceptar la Política de Privacidad para poder enviar el mensaje.' });
+  }
+
   if (!name || typeof name !== 'string' || name.trim().length < 2 || name.length > 120) {
     return res.status(400).json({ ok: false, error: 'Por favor, introduce un nombre válido (mínimo 2 caracteres).' });
   }
@@ -125,6 +184,7 @@ app.post('/contacto', rateLimitContact, (req, res) => {
     `Email:            ${email.trim()}`,
     `Tipo de Proyecto: ${cleanProjectType}`,
     `Presupuesto aprox: ${cleanBudget}`,
+    `Consentimiento:   Aceptado expresamente (RGPD)`,
     '--------------------------------------------------',
     'DETALLE DE LA SOLICITUD:',
     message.trim(),
@@ -156,6 +216,21 @@ app.get('/health', (req, res) => {
     uptime: process.uptime(),
     timestamp: new Date().toISOString()
   });
+});
+
+// ============================================
+// Rutas de Información Legal
+// ============================================
+app.get('/aviso-legal', (req, res) => {
+  res.sendFile(path.join(__dirname, 'aviso-legal.html'));
+});
+
+app.get('/privacidad', (req, res) => {
+  res.sendFile(path.join(__dirname, 'privacidad.html'));
+});
+
+app.get('/cookies', (req, res) => {
+  res.sendFile(path.join(__dirname, 'cookies.html'));
 });
 
 // ============================================

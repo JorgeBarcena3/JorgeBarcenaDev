@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Cookies — Jorge Bárcena Dev</title>
+  <meta name="description" content="Información detallada sobre el uso de cookies y tecnologías de almacenamiento local en dev.jorgebarcena.es conforme a la LSSI-CE y directrices de la AEPD." />
+  <meta name="robots" content="noindex, follow" />
+  <meta name="theme-color" content="#030712" />
+  <link rel="canonical" href="https://dev.jorgebarcena.es/cookies" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- Favicon Moderno & Multi-resolución -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg?v=4" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png?v=4" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png?v=4" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico?v=4" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=4" />
+
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Estilos Principales -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-slate-950">
+
+  <!-- ======================================================== -->
+  <!-- NAVEGACIÓN                                               -->
+  <!-- ======================================================== -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="/" class="brand-logo" aria-label="Jorge Bárcena Dev - Inicio">
+        <span class="brand-symbol">&lt;/&gt;</span>
+        <span class="brand-name">Jorge Bárcena</span>
+        <span class="brand-sub">.dev</span>
+      </a>
+
+      <!-- Menú Desktop -->
+      <nav class="nav-desktop" aria-label="Navegación principal">
+        <ul class="nav-links">
+          <li><a href="/#servicios" class="nav-link">Servicios</a></li>
+          <li><a href="/#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="/#propuesta" class="nav-link">Propuesta</a></li>
+          <li><a href="/#stack" class="nav-link">Stack</a></li>
+          <li><a href="/#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- CTA Volver -->
+      <div class="header-actions">
+        <a href="/" class="btn btn-secondary btn-sm">
+          <i class="fa-solid fa-arrow-left"></i>
+          <span>Volver al inicio</span>
+        </a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menú" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menú Móvil -->
+    <div class="mobile-nav" id="mobileNav">
+      <ul class="mobile-nav-links">
+        <li><a href="/#servicios" class="mobile-link">Servicios a medida</a></li>
+        <li><a href="/#portfolio" class="mobile-link">Portfolio de Proyectos</a></li>
+        <li><a href="/#contacto" class="mobile-link">Contacto</a></li>
+        <li><a href="/" class="mobile-link">← Volver a Inicio</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="legal-main">
+    <section class="legal-hero">
+      <div class="container">
+        <div class="experience-pill">
+          <i class="fa-solid fa-cookie-bite text-cyan"></i>
+          <span>Directiva ePrivacy &amp; Guía AEPD</span>
+        </div>
+        <h1 class="legal-title">Política de Cookies</h1>
+        <p class="legal-subtitle">
+          Explicación clara de qué tecnologías de almacenamiento utilizamos, para qué fines y cómo puedes gestionar o revocar tus preferencias en cualquier momento.
+        </p>
+        <div class="legal-meta">
+          <span><i class="fa-regular fa-calendar-check"></i> Última actualización: Octubre 2026</span>
+          <span><i class="fa-solid fa-sliders"></i> Control total en manos del usuario</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="legal-body-section">
+      <div class="container legal-container">
+        <div class="legal-card">
+
+          <!-- Botón de configuración directa -->
+          <div class="legal-cta-box">
+            <div class="cta-box-text">
+              <h3>Panel de Preferencias de Cookies</h3>
+              <p>Puedes revisar o cambiar tu configuración de consentimiento en cualquier momento con un solo clic.</p>
+            </div>
+            <button type="button" class="btn btn-primary btn-sm" id="btnOpenCookieSettingsPage">
+              <i class="fa-solid fa-gear"></i>
+              <span>Abrir Ajustes de Cookies</span>
+            </button>
+          </div>
+
+          <!-- 1. ¿Qué son las cookies? -->
+          <article class="legal-block">
+            <h2>1. ¿Qué son las cookies y tecnologías similares?</h2>
+            <p>
+              Una <strong>cookie</strong> es un pequeño fichero de texto que un sitio web almacena en el navegador o dispositivo del usuario durante la navegación. Permite al sitio recordar información sobre la visita (por ejemplo, tus preferencias de consentimiento o ajustes de visualización).
+            </p>
+            <p>
+              Asimismo, se incluyen bajo este término tecnologías similares como <strong>LocalStorage</strong> y <strong>SessionStorage</strong> de HTML5, que permiten almacenar datos localmente en el navegador del usuario sin enviarlos automáticamente en cada petición HTTP al servidor, reduciendo el consumo de ancho de banda y reforzando la privacidad técnica.
+            </p>
+          </article>
+
+          <!-- 2. Tipos de cookies según su finalidad -->
+          <article class="legal-block">
+            <h2>2. Tipología de Cookies según su Finalidad</h2>
+            <div class="cookie-types-grid">
+              <div class="cookie-type-card">
+                <div class="badge-status technical">Siempre activas</div>
+                <h4>1. Cookies Técnicas o Estrictamente Necesarias</h4>
+                <p>
+                  Son aquellas indispensables para que la web funcione correctamente y de forma segura. Permiten la navegación, el control del tráfico y la comunicación de datos, la gestión de sesiones y el almacenamiento de tus preferencias de consentimiento de cookies. No requieren consentimiento según el artículo 22.2 de la LSSI.
+                </p>
+              </div>
+
+              <div class="cookie-type-card">
+                <div class="badge-status optional">Configurables</div>
+                <h4>2. Cookies de Análisis o Medición</h4>
+                <p>
+                  Permiten cuantificar de forma agregada el número de usuarios y realizar mediciones estadísticas del uso del sitio para introducir mejoras basadas en el análisis del comportamiento de uso. Solo se activan si otorgas tu consentimiento expreso.
+                </p>
+              </div>
+
+              <div class="cookie-type-card">
+                <div class="badge-status optional">Configurables</div>
+                <h4>3. Cookies de Personalización o Rendimiento</h4>
+                <p>
+                  Permiten recordar información para que accedas al servicio con determinadas características (por ejemplo, idioma preferido o fuentes optimizadas).
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. Cookies utilizadas en dev.jorgebarcena.es -->
+          <article class="legal-block">
+            <h2>3. Tecnologías de Almacenamiento Utilizadas en este Sitio Web</h2>
+            <p>
+              A continuación se detalla el inventario de cookies y almacenamiento utilizado en <code>dev.jorgebarcena.es</code>:
+            </p>
+            <div class="legal-info-table-wrapper">
+              <table class="legal-info-table cookies-inventory-table">
+                <thead>
+                  <tr>
+                    <th>Nombre / Clave</th>
+                    <th>Tipo y Titular</th>
+                    <th>Finalidad</th>
+                    <th>Caducidad</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>jorgebarcena_cookie_consent</code></td>
+                    <td>Propia (LocalStorage)</td>
+                    <td>Almacena el estado del consentimiento de cookies (necesarias / analíticas) elegido por el usuario para no mostrar nuevamente el aviso.</td>
+                    <td>1 año o hasta que el usuario borre los datos del navegador</td>
+                  </tr>
+                  <tr>
+                    <td><code>Google Fonts (CDN)</code></td>
+                    <td>Terceros (Google LLC)</td>
+                    <td>Carga optimizada de tipografías web (Plus Jakarta Sans, JetBrains Mono) servidas mediante CDN segura.</td>
+                    <td>Técnica / Sesión</td>
+                  </tr>
+                  <tr>
+                    <td><code>Cloudflare / CDNJS</code></td>
+                    <td>Terceros (CDNJS)</td>
+                    <td>Carga de recursos estáticos de iconos (FontAwesome) sin rastreo de actividad ni fines publicitarios.</td>
+                    <td>Técnica / Sesión</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="legal-note-box">
+              <i class="fa-solid fa-shield-cat"></i>
+              <strong>Compromiso No AdTech:</strong> Este sitio web <strong>NO</strong> utiliza cookies publicitarias, ni redes de seguimiento de perfiles comerciales (como Facebook Pixel, Google Ads Remarketing, etc.). Priorizamos un código limpio, rendimiento óptimo y máxima privacidad.
+            </p>
+          </article>
+
+          <!-- 4. Cómo revocar y configurar -->
+          <article class="legal-block">
+            <h2>4. Cómo Gestionar o Revocar el Consentimiento</h2>
+            <p>
+              Puedes revocar o modificar tu consentimiento en cualquier momento utilizando nuestro panel interactivo:
+            </p>
+            <p>
+              <button type="button" class="btn btn-secondary btn-sm" id="btnReopenCookiesSecondary">
+                <i class="fa-solid fa-sliders"></i>
+                <span>Configurar Preferencias de Cookies</span>
+              </button>
+            </p>
+            <h3 style="margin-top: 2rem;">Desactivación o eliminación desde tu navegador</h3>
+            <p>
+              Asimismo, puedes permitir, bloquear o eliminar las cookies instaladas en tu equipo mediante la configuración de las opciones del navegador que utilices:
+            </p>
+            <ul class="legal-list">
+              <li><strong>Google Chrome:</strong> Configuración &gt; Privacidad y seguridad &gt; Cookies y otros datos de sitios. (<a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener noreferrer" class="legal-link">Ver guía de Chrome</a>)</li>
+              <li><strong>Mozilla Firefox:</strong> Ajustes &gt; Privacidad &amp; Seguridad &gt; Cookies y datos del sitio. (<a href="https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias" target="_blank" rel="noopener noreferrer" class="legal-link">Ver guía de Firefox</a>)</li>
+              <li><strong>Apple Safari:</strong> Preferencias &gt; Privacidad &gt; Bloquear todas las cookies. (<a href="https://support.apple.com/es-es/guide/safari/sfri11471/mac" target="_blank" rel="noopener noreferrer" class="legal-link">Ver guía de Safari</a>)</li>
+              <li><strong>Microsoft Edge:</strong> Configuración &gt; Cookies y permisos del sitio &gt; Cookies y datos guardados. (<a href="https://support.microsoft.com/es-es/microsoft-edge/eliminar-las-cookies-en-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" rel="noopener noreferrer" class="legal-link">Ver guía de Edge</a>)</li>
+            </ul>
+          </article>
+
+          <!-- 5. Actualizaciones -->
+          <article class="legal-block">
+            <h2>5. Actualizaciones de la Política de Cookies</h2>
+            <p>
+              Esta Política de Cookies puede ser modificada en función de nuevas exigencias legislativas, reglamentarias o con la finalidad de adaptar dicha política a las instrucciones dictadas por la Agencia Española de Protección de Datos (AEPD). Se aconseja a los usuarios visitarla periódicamente.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================== -->
+  <!-- FOOTER                                                   -->
+  <!-- ======================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="/" class="brand-logo">
+          <span class="brand-symbol">&lt;/&gt;</span>
+          <span class="brand-name">Jorge Bárcena</span>
+          <span class="brand-sub">.dev</span>
+        </a>
+        <p class="footer-bio">
+          Ingeniero de Software con más de 6 años de experiencia creando soluciones digitales a medida y escalables.
+        </p>
+        <div class="footer-socials">
+          <a href="https://github.com/JorgeBarcena3" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-link">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="mailto:j.barcenalumbreras@gmail.com" aria-label="Email" class="social-link">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          <a href="https://jorgebarcena.es" target="_blank" rel="noopener noreferrer" aria-label="Faceta de Actor" class="social-link text-accent-gold" title="Ver web de Actor">
+            <i class="fa-solid fa-masks-theater"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="/#servicios">Servicios</a></li>
+          <li><a href="/#portfolio">Portfolio</a></li>
+          <li><a href="/#propuesta">Propuesta de Valor</a></li>
+          <li><a href="/#stack">Tecnologías</a></li>
+          <li><a href="/#contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav">
+        <h4>Información Legal</h4>
+        <ul>
+          <li><a href="/aviso-legal">Aviso Legal</a></li>
+          <li><a href="/privacidad">Política de Privacidad</a></li>
+          <li><a href="/cookies" class="text-cyan font-semibold">Política de Cookies</a></li>
+          <li><a href="#" id="openCookieSettingsFooter">Configurar Cookies</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav">
+        <h4>Faceta Artística</h4>
+        <ul>
+          <li><a href="https://jorgebarcena.es" target="_blank" rel="noopener noreferrer">🎭 Web Oficial Actor</a></li>
+          <li><a href="https://jorgebarcena.es#videobook" target="_blank" rel="noopener noreferrer">Videobook</a></li>
+          <li><a href="https://jorgebarcena.es#contacto" target="_blank" rel="noopener noreferrer">Contacto Escénico</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div class="footer-copy">
+        &copy; <span id="currentYear">2026</span> Jorge Bárcena Lumbreras (NIF/CIF: Por determinar). Todos los derechos reservados.
+      </div>
+      <div class="footer-tagline">
+        Transparencia técnica y control de privacidad total.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal y Banner de Cookies -->
+  <div id="cookieConsentBanner" class="cookie-banner hidden" role="region" aria-label="Aviso de cookies"></div>
+  <div id="cookieModalOverlay" class="cookie-modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="cookieModalTitle"></div>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

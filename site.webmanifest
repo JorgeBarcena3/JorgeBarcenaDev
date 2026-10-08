@@ -1,0 +1,27 @@
+{
+  "name": "Jorge Bárcena — Ingeniero de Software & Consultor Tecnológico",
+  "short_name": "Jorge Bárcena Dev",
+  "description": "Portfolio y servicios profesionales de desarrollo de software a medida y consultoría técnica.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#030712",
+  "theme_color": "#030712",
+  "icons": [
+    {
+      "src": "/assets/images/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -20,6 +20,7 @@
   "author": "Jorge Bárcena <j.barcenalumbreras@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "compression": "^1.8.2",
     "express": "^5.2.1"
   }
 }
