@@ -21,6 +21,7 @@ Este proyecto complementa y se enlaza de forma fluida con su faceta artística d
 - **Backend Robusto & Ligero (Node.js / Express):**
   - Servidor Express en `server.js` con cabeceras de seguridad HTTP (`nosniff`, `SAMEORIGIN`, `strict-origin`, etc.).
   - Endpoint `/contacto` con limitador de tasa de peticiones en memoria (Rate Limiter).
+  - Notificaciones instantáneas directas a Telegram mediante Bot API ante cada envío.
   - Almacenamiento seguro de solicitudes en la carpeta `contacto/`.
   - Endpoint de salud `/health` para monitorización de uptime.
 
@@ -48,7 +49,16 @@ Este proyecto complementa y se enlaza de forma fluida con su faceta artística d
 npm install
 ```
 
-### 3. Modo Desarrollo
+### 3. Configuración de Variables de Entorno (.env)
+Copia `.env.example` a `.env` y configura tus credenciales de Telegram:
+```bash
+cp .env.example .env
+```
+- `TELEGRAM_BOT_TOKEN`: Token generado por el bot [@BotFather](https://t.me/BotFather) en Telegram.
+- `TELEGRAM_CHAT_ID`: Tu identificador de usuario o grupo de Telegram (puedes obtenerlo enviando `/start` a [@userinfobot](https://t.me/userinfobot) o [@GetIDsBot](https://t.me/GetIDsBot)).
+- `TELEGRAM_THREAD_ID`: *(Opcional)* Si usas un supergrupo con temas/hilos, introduce el ID del hilo.
+
+### 4. Modo Desarrollo
 ```bash
 npm run dev
 ```

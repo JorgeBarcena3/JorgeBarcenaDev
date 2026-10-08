@@ -5,6 +5,34 @@ const compression = require('compression');
 const path = require('path');
 const fs = require('fs');
 
+// ============================================
+// Carga opcional de .env local (cero dependencias externas)
+// ============================================
+const envPath = path.join(__dirname, '.env');
+if (fs.existsSync(envPath)) {
+  try {
+    const envContent = fs.readFileSync(envPath, 'utf8');
+    envContent.split('\n').forEach((line) => {
+      const trimmed = line.trim();
+      if (trimmed && !trimmed.startsWith('#')) {
+        const match = trimmed.match(/^([^=]+)=(.*)$/);
+        if (match) {
+          const key = match[1].trim();
+          let value = match[2].trim();
+          if ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith("'") && value.endsWith("'"))) {
+            value = value.slice(1, -1);
+          }
+          if (process.env[key] === undefined) {
+            process.env[key] = value;
+          }
+        }
+      }
+    });
+  } catch (err) {
+    console.warn('[config] No se pudo leer el archivo .env:', err.message);
+  }
+}
+
 const app = express();
 const PORT = process.env.PORT || 6688;
 const isProd = process.env.NODE_ENV === 'production';
@@ -133,6 +161,72 @@ setInterval(() => {
 }, 5 * 60_000);
 
 // ============================================
+// Notificaciones a Telegram
+// ============================================
+function escapeTelegramHtml(text) {
+  if (!text) return '';
+  return String(text)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+}
+
+async function sendTelegramNotification({ name, email, projectType, budget, message, dateFormatted }) {
+  const token = process.env.TELEGRAM_BOT_TOKEN;
+  const chatId = process.env.TELEGRAM_CHAT_ID;
+  const threadId = process.env.TELEGRAM_THREAD_ID;
+
+  if (!token || !chatId) {
+    console.warn('[telegram] TELEGRAM_BOT_TOKEN o TELEGRAM_CHAT_ID no configurados. Omitiendo notificación por Telegram.');
+    return { sent: false, reason: 'unconfigured' };
+  }
+
+  const textLines = [
+    '📬 <b>Nueva solicitud de contacto — dev.jorgebarcena.es</b>',
+    '',
+    `👤 <b>Nombre:</b> ${escapeTelegramHtml(name)}`,
+    `📧 <b>Email:</b> ${escapeTelegramHtml(email)}`,
+    `💼 <b>Proyecto:</b> ${escapeTelegramHtml(projectType)}`,
+    `💰 <b>Presupuesto:</b> ${escapeTelegramHtml(budget)}`,
+    `📅 <b>Fecha:</b> ${escapeTelegramHtml(dateFormatted)}`,
+    '',
+    '📝 <b>Mensaje:</b>',
+    `<blockquote>${escapeTelegramHtml(message)}</blockquote>`
+  ];
+
+  const payload = {
+    chat_id: chatId,
+    text: textLines.join('\n'),
+    parse_mode: 'HTML',
+    disable_web_page_preview: true
+  };
+
+  if (threadId) {
+    payload.message_thread_id = threadId;
+  }
+
+  try {
+    const res = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+
+    const data = await res.json();
+    if (!res.ok || !data.ok) {
+      console.error('[telegram] Error devuelto por Telegram API:', data);
+      return { sent: false, error: data };
+    }
+
+    console.log(`[telegram] Notificación enviada correctamente a Telegram (message_id: ${data.result?.message_id})`);
+    return { sent: true, messageId: data.result?.message_id };
+  } catch (err) {
+    console.error('[telegram] Error de conexión al enviar mensaje a Telegram:', err.message);
+    return { sent: false, error: err.message };
+  }
+}
+
+// ============================================
 // Endpoint API de Contacto (/contacto)
 // ============================================
 app.post('/contacto', rateLimitContact, (req, res) => {
@@ -199,6 +293,19 @@ app.post('/contacto', rateLimitContact, (req, res) => {
     }
 
     console.log(`[contacto] Mensaje guardado correctamente: ${fileName} de ${name.trim()} (${email.trim()})`);
+
+    // Enviar notificación a Telegram en segundo plano
+    sendTelegramNotification({
+      name: name.trim(),
+      email: email.trim(),
+      projectType: cleanProjectType,
+      budget: cleanBudget,
+      message: message.trim(),
+      dateFormatted
+    }).catch((telegramErr) => {
+      console.error('[telegram] Error no capturado en notificación:', telegramErr);
+    });
+
     return res.status(200).json({
       ok: true,
       message: '¡Gracias por tu mensaje! Me pondré en contacto contigo lo antes posible.'
