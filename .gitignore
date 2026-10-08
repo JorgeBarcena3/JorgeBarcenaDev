@@ -9,3 +9,5 @@ yarn-error.log*
 .env.*.local
 contacto/*.txt
 !contacto/.gitkeep
+__pycache__/
+*.pyc
