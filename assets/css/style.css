@@ -1228,6 +1228,77 @@ button, input, select, textarea {
   opacity: 1;
 }
 
+/* Thumbnail Visual Showcase */
+.portfolio-thumbnail-wrap {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin-bottom: 1.35rem;
+  background: #020617;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5), 0 4px 14px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.portfolio-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1), filter 0.3s ease;
+  filter: brightness(0.92) contrast(1.05);
+}
+
+.portfolio-card:hover .portfolio-thumbnail {
+  transform: scale(1.04);
+  filter: brightness(1) contrast(1.08);
+}
+
+.portfolio-thumbnail-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(7, 11, 20, 0.1) 0%, rgba(7, 11, 20, 0.65) 100%);
+  display: flex;
+  align-items: flex-end;
+  padding: 0.85rem;
+  opacity: 0.9;
+  transition: opacity var(--transition-normal);
+}
+
+.portfolio-card:hover .portfolio-thumbnail-overlay {
+  opacity: 1;
+}
+
+.preview-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-full);
+  background: rgba(15, 23, 42, 0.88);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  color: var(--accent-cyan);
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: all var(--transition-fast);
+}
+
+.portfolio-thumbnail-wrap:hover .preview-badge {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
 .portfolio-card-body {
   display: flex;
   flex-direction: column;
