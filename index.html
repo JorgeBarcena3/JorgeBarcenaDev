@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jorge Bárcena — Ingeniero de Software & Consultor Tecnológico</title>
+  <meta name="description" content="Desarrollador de software con más de 6 años de experiencia creando soluciones personalizadas, aplicaciones web escalables y arquitecturas robustas para empresas y proyectos." />
+  <meta name="keywords" content="Jorge Bárcena, Desarrollador de Software, Full Stack Developer, Soluciones Personalizadas, Node.js, React, PostgreSQL, Stripe, Madrid, Consultoría Tecnológica" />
+  <meta name="author" content="Jorge Bárcena" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Redes Sociales -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Jorge Bárcena — Ingeniero de Software & Soluciones a Medida" />
+  <meta property="og:description" content="+6 años creando soluciones de software a medida para empresas y proyectos. Arquitectura escalable, APIs, frontend moderno y automatizaciones." />
+  <meta property="og:image" content="assets/images/jorge-profile.jpg" />
+  <meta property="og:url" content="https://jorgebarcena.es" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Estilos Principales -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Structured Data JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jorge Bárcena",
+    "jobTitle": "Senior Software Engineer & Tech Consultant",
+    "description": "Desarrollador de software con más de 6 años de experiencia creando soluciones tecnológicas personalizadas para empresas.",
+    "email": "j.barcenalumbreras@gmail.com",
+    "url": "https://jorgebarcena.es",
+    "sameAs": [
+      "https://github.com/JorgeBarcena3",
+      "https://www.instagram.com/soyjorgebarcena"
+    ],
+    "knowsAbout": [
+      "Software Development",
+      "Full-Stack Web Development",
+      "Node.js",
+      "Express",
+      "React",
+      "PostgreSQL",
+      "Docker",
+      "Stripe Integration",
+      "Custom Software Solutions"
+    ]
+  }
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-slate-950">
+
+  <!-- ======================================================== -->
+  <!-- BARRA DUAL DE FACETAS: DEVELOPER vs ACTOR                 -->
+  <!-- ======================================================== -->
+  <div class="dual-mode-banner">
+    <div class="container dual-mode-inner">
+      <div class="dual-mode-label">
+        <span class="pulse-dot"></span>
+        <span class="text-label">Identidad profesional:</span>
+      </div>
+      <div class="dual-mode-switcher" role="tablist" aria-label="Cambiar faceta profesional">
+        <span class="mode-chip active" aria-selected="true" role="tab">
+          <i class="fa-solid fa-code"></i>
+          <strong>Software Developer</strong>
+          <span class="badge-current">Aquí</span>
+        </span>
+        <a href="/JorgeBarcenaActor" class="mode-chip actor-chip" role="tab" title="Conocer la faceta actoral de Jorge Bárcena">
+          <i class="fa-solid fa-masks-theater"></i>
+          <strong>Actor e Improvisador</strong>
+          <span class="badge-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> /JorgeBarcenaActor</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================== -->
+  <!-- NAVEGACIÓN PRINCIPAL                                     -->
+  <!-- ======================================================== -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#hero" class="brand-logo" aria-label="Jorge Bárcena Dev - Inicio">
+        <span class="brand-symbol">&lt;/&gt;</span>
+        <span class="brand-name">Jorge Bárcena</span>
+        <span class="brand-sub">.dev</span>
+      </a>
+
+      <!-- Menú Desktop -->
+      <nav class="nav-desktop" aria-label="Navegación principal">
+        <ul class="nav-links">
+          <li><a href="#servicios" class="nav-link">Servicios</a></li>
+          <li><a href="#propuesta" class="nav-link">Por qué trabajar conmigo</a></li>
+          <li><a href="#stack" class="nav-link">Tecnologías</a></li>
+          <li><a href="#proceso" class="nav-link">Proceso</a></li>
+          <li><a href="#doble-faceta" class="nav-link">Doble Faceta</a></li>
+          <li><a href="#contacto" class="nav-link nav-contact-highlight">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Estado y CTA -->
+      <div class="header-actions">
+        <div class="status-badge" title="Actualmente evaluando y aceptando nuevos proyectos">
+          <span class="status-indicator"></span>
+          <span class="status-text">Disponible para proyectos</span>
+        </div>
+        <a href="#contacto" class="btn btn-primary btn-sm">
+          <span>Hablemos</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menú" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menú Móvil Desplegable -->
+    <div class="mobile-nav" id="mobileNav">
+      <ul class="mobile-nav-links">
+        <li><a href="#servicios" class="mobile-link">Servicios a medida</a></li>
+        <li><a href="#propuesta" class="mobile-link">Propuesta de valor</a></li>
+        <li><a href="#stack" class="mobile-link">Stack & Tecnologías</a></li>
+        <li><a href="#proceso" class="mobile-link">Metodología de trabajo</a></li>
+        <li><a href="#doble-faceta" class="mobile-link">Software + Actuación</a></li>
+        <li><a href="#contacto" class="mobile-link">Iniciar Proyecto</a></li>
+        <li class="mobile-divider"></li>
+        <li>
+          <a href="/JorgeBarcenaActor" class="mobile-actor-link">
+            <i class="fa-solid fa-masks-theater"></i> Ver faceta de Actor (/JorgeBarcenaActor)
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================== -->
+    <!-- HERO SECTION                                             -->
+    <!-- ======================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-glow"></div>
+      <div class="hero-grid-pattern"></div>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="experience-pill">
+            <i class="fa-solid fa-shield-halved text-cyan"></i>
+            <span>+6 años de experiencia en desarrollo de software</span>
+          </div>
+
+          <h1 class="hero-title">
+            Creo <span class="gradient-text">soluciones de software personalizadas</span> para tu empresa o proyecto.
+          </h1>
+
+          <p class="hero-lead">
+            Ayudo a compañías, startups y profesionales a transformar necesidades complejas en sistemas web robustos, rápidos y escalables. Sin plantillas genéricas: desarrollo pensado para los objetivos reales de tu negocio.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#contacto" class="btn btn-primary btn-lg">
+              <i class="fa-solid fa-comments"></i>
+              <span>Cuéntame tu proyecto</span>
+            </a>
+            <a href="#servicios" class="btn btn-secondary btn-lg">
+              <i class="fa-solid fa-layer-group"></i>
+              <span>Ver qué puedo hacer por ti</span>
+            </a>
+          </div>
+
+          <!-- Quick trust badges -->
+          <div class="hero-highlights">
+            <div class="highlight-item">
+              <i class="fa-solid fa-check text-cyan"></i>
+              <span>Desarrollo End-to-End</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-check text-cyan"></i>
+              <span>Arquitectura Limpia & Escalable</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-check text-cyan"></i>
+              <span>Comunicación directa y clara</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Terminal & Profile Card -->
+        <div class="hero-visual">
+          <div class="tech-card-wrapper">
+            <div class="terminal-card">
+              <div class="terminal-header">
+                <div class="terminal-dots">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                </div>
+                <div class="terminal-title">jorgebarcena.ts — perfil profesional</div>
+              </div>
+              <div class="terminal-body">
+                <div class="profile-card-top">
+                  <div class="avatar-frame">
+                    <img src="assets/images/jorge-profile.jpg" alt="Jorge Bárcena — Desarrollador de Software" class="profile-photo" onerror="this.src='assets/images/jorge-frontal.jpg'" />
+                    <span class="avatar-badge" title="Full Stack">JS/TS</span>
+                  </div>
+                  <div class="profile-quick-info">
+                    <h3 class="profile-name">Jorge Bárcena</h3>
+                    <p class="profile-role">Software Engineer & Solution Builder</p>
+                    <div class="profile-tags">
+                      <span class="tag">Madrid, ES</span>
+                      <span class="tag">Remoto / Híbrido</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="terminal-code">
+                  <div class="code-line"><span class="token-keyword">const</span> <span class="token-var">developer</span> = {</div>
+                  <div class="code-line indent"><span class="token-prop">experiencia</span>: <span class="token-string">"6+ años en producción"</span>,</div>
+                  <div class="code-line indent"><span class="token-prop">misión</span>: <span class="token-string">"Digitalizar & potenciar negocios"</span>,</div>
+                  <div class="code-line indent"><span class="token-prop">especialidad</span>: [<span class="token-string">"FullStack"</span>, <span class="token-string">"APIs"</span>, <span class="token-string">"Stripe"</span>, <span class="token-string">"SaaS"</span>],</div>
+                  <div class="code-line indent"><span class="token-prop">otraPasion</span>: <span class="token-link">&quot;<a href="/JorgeBarcenaActor">Actor e Improvisador</a>&quot;</span>,</div>
+                  <div class="code-line indent"><span class="token-prop">estado</span>: <span class="token-string text-green">&quot;Listo para tu próximo reto&quot;</span></div>
+                  <div class="code-line">};</div>
+                </div>
+
+                <div class="profile-actions-bar">
+                  <button class="copy-email-btn" id="copyEmailHeroBtn" data-email="j.barcenalumbreras@gmail.com" title="Copiar correo">
+                    <i class="fa-regular fa-copy"></i>
+                    <span>Copiar j.barcenalumbreras@gmail.com</span>
+                  </button>
+                  <a href="https://github.com/JorgeBarcena3" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- METRICAS / LOGROS                                        -->
+    <!-- ======================================================== -->
+    <section class="metrics-strip">
+      <div class="container metrics-grid">
+        <div class="metric-card">
+          <div class="metric-number">+6</div>
+          <div class="metric-label">Años de experiencia construyendo software</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">100%</div>
+          <div class="metric-label">Soluciones a medida para cada modelo de negocio</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">End-to-End</div>
+          <div class="metric-label">Del diseño de la arquitectura al despliegue en nube</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">0 Jerga</div>
+          <div class="metric-label">Comunicación fluida, transparente y pragmática</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- SERVICIOS / SOLUCIONES PERSONALIZADAS                     -->
+    <!-- ======================================================== -->
+    <section class="section services-section" id="servicios">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Soluciones de Alto Impacto</div>
+          <h2 class="section-title">¿Qué puedo construir para tu empresa o proyecto?</h2>
+          <p class="section-subtitle">
+            No todas las empresas necesitan lo mismo. Analizo tu caso concreto y desarrollo la herramienta exacta que te permitirá ahorrar tiempo, aumentar ingresos o automatizar flujos críticos.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Servicio 1 -->
+          <article class="service-card">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <h3 class="service-title">Desarrollo Web & Plataformas SaaS a Medida</h3>
+            <p class="service-desc">
+              Creación de aplicaciones web dinámicas, portales de clientes, intranets y plataformas SaaS desde cero. Interfaces intuitivas, adaptadas a dispositivos móviles y construidas con las mejores prácticas de velocidad y SEO.
+            </p>
+            <ul class="service-bullets">
+              <li><i class="fa-solid fa-check"></i> Paneles de control y backoffices administrativos</li>
+              <li><i class="fa-solid fa-check"></i> Plataformas interactivas y PWAs</li>
+              <li><i class="fa-solid fa-check"></i> Experiencias fluidas con React, Vue y Vite</li>
+            </ul>
+          </article>
+
+          <!-- Servicio 2 -->
+          <article class="service-card featured-service">
+            <div class="service-badge">Más Demandado</div>
+            <div class="service-icon-box">
+              <i class="fa-solid fa-server"></i>
+            </div>
+            <h3 class="service-title">APIs, Backend & Arquitecturas Escalables</h3>
+            <p class="service-desc">
+              El motor que sostiene tu negocio. Diseño y desarrollo de APIs RESTful seguras, microservicios y bases de datos preparadas para soportar alto tráfico y transacciones concurrentes con total fiabilidad.
+            </p>
+            <ul class="service-bullets">
+              <li><i class="fa-solid fa-check"></i> Node.js, Express, Python y arquitecturas modulares</li>
+              <li><i class="fa-solid fa-check"></i> Bases de datos relacionales (PostgreSQL) y NoSQL</li>
+              <li><i class="fa-solid fa-check"></i> Autenticación segura (JWT, OAuth, RBAC)</li>
+            </ul>
+          </article>
+
+          <!-- Servicio 3 -->
+          <article class="service-card">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-credit-card"></i>
+            </div>
+            <h3 class="service-title">Integraciones de Pago & Monetización (Stripe)</h3>
+            <p class="service-desc">
+              Monetiza tu proyecto de forma segura y automatizada. Especialista en integración de pasarelas de pago, modelos de suscripción recurrente, marketplaces multi-cuenta con Stripe Connect y webhooks en tiempo real.
+            </p>
+            <ul class="service-bullets">
+              <li><i class="fa-solid fa-check"></i> Stripe Checkout, Elements & Customer Portal</li>
+              <li><i class="fa-solid fa-check"></i> Stripe Connect (pagos divididos y comisiones)</li>
+              <li><i class="fa-solid fa-check"></i> Facturación automatizada y prevención de fraude</li>
+            </ul>
+          </article>
+
+          <!-- Servicio 4 -->
+          <article class="service-card">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-bolt"></i>
+            </div>
+            <h3 class="service-title">Automatizaciones, Bots & Conexión de Sistemas</h3>
+            <p class="service-desc">
+              Elimina tareas manuales repetitivas que queman a tu equipo. Conecto tus herramientas favoritas (CRMs, ERPs, mensajería, bases de datos externas) para que la información fluya sin intervención humana.
+            </p>
+            <ul class="service-bullets">
+              <li><i class="fa-solid fa-check"></i> Bots de Telegram/Discord y automatizaciones</li>
+              <li><i class="fa-solid fa-check"></i> Sincronización continua de datos entre plataformas</li>
+              <li><i class="fa-solid fa-check"></i> Alertas automáticas y monitorización operativa</li>
+            </ul>
+          </article>
+
+          <!-- Servicio 5 -->
+          <article class="service-card">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-shield-virus"></i>
+            </div>
+            <h3 class="service-title">Auditoría, Refactorización & Despliegue en Cloud</h3>
+            <p class="service-desc">
+              ¿Tu aplicación va lenta, tiene errores recurrentes o es difícil de mantener? Reviso tu código, modernizo dependencias obsoletas, optimizo consultas y empaqueto el entorno en contenedores Docker para un despliegue seguro.
+            </p>
+            <ul class="service-bullets">
+              <li><i class="fa-solid fa-check"></i> Auditorías de seguridad y rendimiento web</li>
+              <li><i class="fa-solid fa-check"></i> Contenedorización con Docker y Docker Compose</li>
+              <li><i class="fa-solid fa-check"></i> Configuración de servidores Linux, Nginx y SSL</li>
+            </ul>
+          </article>
+
+          <!-- Servicio 6 -->
+          <article class="service-card">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-compass-drafting"></i>
+            </div>
+            <h3 class="service-title">Consultoría Técnica & Mentoría de Arquitectura</h3>
+            <p class="service-desc">
+              Toma decisiones informadas antes de gastar miles de euros en desarrollo innecesario. Te ayudo a validar la viabilidad técnica de tu idea, elegir el stack adecuado y planificar un MVP ágil que puedas validar en el mercado.
+            </p>
+            <ul class="service-bullets">
+              <li><i class="fa-solid fa-check"></i> Definición de requerimientos y roadmap técnico</li>
+              <li><i class="fa-solid fa-check"></i> Elección pragmática de tecnología sin sobrecostes</li>
+              <li><i class="fa-solid fa-check"></i> Acompañamiento en el lanzamiento a producción</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- PROPUESTA DE VALOR / POR QUÉ TRABAJAR CONMIGO            -->
+    <!-- ======================================================== -->
+    <section class="section value-section" id="propuesta">
+      <div class="container">
+        <div class="value-layout">
+          <div class="value-content">
+            <div class="section-badge">Criterio Profesional</div>
+            <h2 class="section-title">Un ingeniero de software que habla el idioma de tu negocio</h2>
+            <p class="section-lead">
+              El buen código no sirve de nada si no aporta valor real a tus clientes o a tu operativa diaria. Mi enfoque combina rigor técnico con visión práctica de producto.
+            </p>
+
+            <div class="value-points">
+              <div class="value-point">
+                <div class="point-icon"><i class="fa-solid fa-bullseye"></i></div>
+                <div>
+                  <h4 class="point-title">Enfoque centrado en resultados, no en modas</h4>
+                  <p class="point-desc">Utilizo tecnologías probadas, estables y bien documentadas que garantizan que tu proyecto funcionará a largo plazo sin dolores de cabeza de mantenimiento.</p>
+                </div>
+              </div>
+
+              <div class="value-point">
+                <div class="point-icon"><i class="fa-solid fa-code-commit"></i></div>
+                <div>
+                  <h4 class="point-title">Propiedad total de tu código</h4>
+                  <p class="point-desc">Sin ataduras ni plataformas cerradas. Todo el software desarrollado es 100% tuyo, con código limpio, modular y documentado para que cualquier equipo pueda continuar sobre él.</p>
+                </div>
+              </div>
+
+              <div class="value-point">
+                <div class="point-icon"><i class="fa-solid fa-comments-dollar"></i></div>
+                <div>
+                  <h4 class="point-title">Transparencia en tiempos y presupuestos</h4>
+                  <p class="point-desc">Entregas incrementales y comunicación continua. Sabrás en todo momento en qué fase se encuentra tu proyecto y qué hitos se han completado.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="value-side-card">
+            <div class="manifesto-card">
+              <div class="manifesto-header">
+                <i class="fa-solid fa-terminal text-cyan"></i>
+                <span>Mi estándar de calidad</span>
+              </div>
+              <ul class="manifesto-list">
+                <li><i class="fa-solid fa-check-double text-green"></i> <strong>Rendimiento medible:</strong> Tiempos de carga rápidos y optimización de recursos.</li>
+                <li><i class="fa-solid fa-check-double text-green"></i> <strong>Seguridad proactiva:</strong> Validación de datos estricta, sanitización y cabeceras de protección.</li>
+                <li><i class="fa-solid fa-check-double text-green"></i> <strong>Arquitectura desacoplada:</strong> Facilidad de ampliación para futuras fases de negocio.</li>
+                <li><i class="fa-solid fa-check-double text-green"></i> <strong>Testing & Robustez:</strong> Pruebas para evitar caídas inesperadas en producción.</li>
+              </ul>
+              <div class="manifesto-quote">
+                &ldquo;El software de calidad no es el que más líneas tiene, sino el que resuelve el problema con la máxima simplicidad y robustez posible.&rdquo;
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- STACK TECNOLÓGICO                                        -->
+    <!-- ======================================================== -->
+    <section class="section stack-section" id="stack">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-badge">Herramientas & Ecosistema</div>
+          <h2 class="section-title">Tecnologías con las que construyo soluciones</h2>
+          <p class="section-subtitle">
+            Un conjunto de herramientas moderno, escalable y validado en proyectos reales en producción.
+          </p>
+        </div>
+
+        <div class="stack-grid">
+          <!-- Backend & APIs -->
+          <div class="stack-category">
+            <div class="stack-cat-header">
+              <i class="fa-solid fa-server text-cyan"></i>
+              <h3>Backend & APIs</h3>
+            </div>
+            <div class="stack-chips">
+              <span class="chip"><i class="fa-brands fa-node-js"></i> Node.js</span>
+              <span class="chip">Express.js</span>
+              <span class="chip"><i class="fa-brands fa-python"></i> Python</span>
+              <span class="chip">REST APIs</span>
+              <span class="chip">WebSockets</span>
+              <span class="chip">Microservicios</span>
+              <span class="chip">JWT & Auth</span>
+            </div>
+          </div>
+
+          <!-- Frontend & UI -->
+          <div class="stack-category">
+            <div class="stack-cat-header">
+              <i class="fa-solid fa-code text-indigo"></i>
+              <h3>Frontend & UI/UX</h3>
+            </div>
+            <div class="stack-chips">
+              <span class="chip"><i class="fa-brands fa-react"></i> React</span>
+              <span class="chip"><i class="fa-brands fa-vuejs"></i> Vue.js</span>
+              <span class="chip"><i class="fa-brands fa-js"></i> TypeScript / ES6+</span>
+              <span class="chip">Tailwind CSS</span>
+              <span class="chip">Vite</span>
+              <span class="chip">HTML5 / CSS3</span>
+              <span class="chip">Accesibilidad (a11y)</span>
+            </div>
+          </div>
+
+          <!-- Bases de Datos & Almacenamiento -->
+          <div class="stack-category">
+            <div class="stack-cat-header">
+              <i class="fa-solid fa-database text-emerald"></i>
+              <h3>Bases de Datos & Data</h3>
+            </div>
+            <div class="stack-chips">
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">SQL & Consultas Optimizadas</span>
+              <span class="chip">MongoDB / NoSQL</span>
+              <span class="chip">Redis (Caché)</span>
+              <span class="chip">Modelado Relacional</span>
+              <span class="chip">Migraciones de Datos</span>
+            </div>
+          </div>
+
+          <!-- DevOps, Infra & Pasarelas -->
+          <div class="stack-category">
+            <div class="stack-cat-header">
+              <i class="fa-solid fa-cloud-arrow-up text-amber"></i>
+              <h3>Infraestructura & Integraciones</h3>
+            </div>
+            <div class="stack-chips">
+              <span class="chip"><i class="fa-brands fa-docker"></i> Docker</span>
+              <span class="chip">Docker Compose</span>
+              <span class="chip"><i class="fa-brands fa-linux"></i> Linux / Ubuntu</span>
+              <span class="chip">Nginx Reverse Proxy</span>
+              <span class="chip"><i class="fa-brands fa-stripe"></i> Stripe API & Connect</span>
+              <span class="chip"><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
+              <span class="chip">CI / CD Pipelines</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- METODOLOGÍA / PROCESO DE TRABAJO                         -->
+    <!-- ======================================================== -->
+    <section class="section process-section" id="proceso">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-badge">Metodología Ágil</div>
+          <h2 class="section-title">Cómo trabajaremos juntos: De la idea a producción</h2>
+          <p class="section-subtitle">
+            Un proceso ordenado y sin fricciones, diseñado para que sientas seguridad en cada paso del camino.
+          </p>
+        </div>
+
+        <div class="process-steps">
+          <div class="step-card">
+            <div class="step-num">01</div>
+            <h3 class="step-title">Descubrimiento & Diagnóstico</h3>
+            <p class="step-desc">
+              Analizamos a fondo los objetivos de tu empresa, los usuarios que utilizarán la solución y los cuellos de botella actuales. Definimos el alcance exacto sin sobrecostes.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-num">02</div>
+            <h3 class="step-title">Arquitectura & Propuesta</h3>
+            <p class="step-desc">
+              Diseño el esquema de base de datos, flujos de usuario y la arquitectura técnica. Te presento un plan claro con hitos de entrega, plazos realistas y presupuesto cerrado.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-num">03</div>
+            <h3 class="step-title">Desarrollo Iterativo</h3>
+            <p class="step-desc">
+              Construcción mediante sprints cortos. Vas viendo avances reales en entornos de prueba desde las primeras semanas para que puedas validar y aportar feedback temprano.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-num">04</div>
+            <h3 class="step-title">Despliegue & Soporte</h3>
+            <p class="step-desc">
+              Puesta en producción segura con monitorización, copias de seguridad y documentación detallada. Te acompaño en el lanzamiento para garantizar estabilidad total.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- DOBLE FACETA: DESARROLLADOR & ACTOR                      -->
+    <!-- ======================================================== -->
+    <section class="section dual-identity-section" id="doble-faceta">
+      <div class="container">
+        <div class="dual-feature-box">
+          <div class="dual-feature-content">
+            <div class="dual-tag">
+              <i class="fa-solid fa-masks-theater"></i>
+              <span>Dos facetas, un mismo profesional</span>
+            </div>
+
+            <h2 class="dual-title">
+              ¿Ingeniero de Software y <span class="text-accent-gold">Actor Teatral</span>?
+            </h2>
+
+            <p class="dual-text">
+              Lejos de ser mundos opuestos, mi trayectoria como actor e improvisador teatral enriquece directamente mi trabajo como desarrollador de software:
+            </p>
+
+            <div class="synergy-grid">
+              <div class="synergy-item">
+                <i class="fa-solid fa-ear-listen text-accent-gold"></i>
+                <div>
+                  <strong>Escucha activa de verdad:</strong>
+                  <span>En la improvisación, el éxito radica en escuchar al compañero. En el software, en entender realmente las necesidades de negocio del cliente antes de escribir una sola línea.</span>
+                </div>
+              </div>
+              <div class="synergy-item">
+                <i class="fa-solid fa-wand-magic-sparkles text-accent-gold"></i>
+                <div>
+                  <strong>Resolución ágil ante imprevistos:</strong>
+                  <span>Capacidad de responder con calma, creatividad y agilidad ante bugs inesperados o cambios en los requerimientos del proyecto.</span>
+                </div>
+              </div>
+              <div class="synergy-item">
+                <i class="fa-solid fa-bullhorn text-accent-gold"></i>
+                <div>
+                  <strong>Comunicación clara sin tecnicismos:</strong>
+                  <span>Capacidad para transmitir ideas complejas a equipos directivos, stakeholders y clientes sin abrumar con lenguaje técnico.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="dual-cta-container">
+              <a href="/JorgeBarcenaActor" class="btn btn-actor-link" target="_self">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span>Explorar mi web de Actor (/JorgeBarcenaActor)</span>
+              </a>
+              <span class="dual-note">Videobook, espectáculos teatrales, bio artística y proyectos escénicos.</span>
+            </div>
+          </div>
+
+          <div class="dual-feature-image-wrapper">
+            <div class="dual-photo-card">
+              <img src="assets/images/jorge-frontal.jpg" alt="Jorge Bárcena — Actor e Ingeniero" class="dual-photo" onerror="this.src='assets/images/jorge-profile.jpg'" />
+              <div class="dual-photo-badge">
+                <span class="badge-tag">🎭 Actor & Improvisador</span>
+                <span class="badge-sub">Formado en interpretación teatral</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- FORMULARIO DE CONTACTO                                   -->
+    <!-- ======================================================== -->
+    <section class="section contact-section" id="contacto">
+      <div class="container">
+        <div class="contact-layout">
+          <!-- Información y Canales -->
+          <div class="contact-info">
+            <div class="section-badge">Contacto Directo</div>
+            <h2 class="section-title">Hablemos sobre tu proyecto o necesidad</h2>
+            <p class="contact-desc">
+              ¿Tienes una idea que desarrollar, necesitas mejorar un sistema existente o buscas un profesional de software con experiencia para tu equipo? Cuéntame los detalles y te responderé en menos de 24 horas laborables.
+            </p>
+
+            <div class="contact-channels">
+              <div class="channel-card">
+                <div class="channel-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="channel-body">
+                  <span class="channel-title">Email Directo</span>
+                  <a href="mailto:j.barcenalumbreras@gmail.com" class="channel-value">j.barcenalumbreras@gmail.com</a>
+                  <button class="copy-small-btn" data-email="j.barcenalumbreras@gmail.com" title="Copiar correo">
+                    <i class="fa-regular fa-copy"></i> Copiar
+                  </button>
+                </div>
+              </div>
+
+              <div class="channel-card">
+                <div class="channel-icon"><i class="fa-brands fa-github"></i></div>
+                <div class="channel-body">
+                  <span class="channel-title">Código & Repositorios</span>
+                  <a href="https://github.com/JorgeBarcena3" target="_blank" rel="noopener noreferrer" class="channel-value">
+                    github.com/JorgeBarcena3 <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="channel-card">
+                <div class="channel-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="channel-body">
+                  <span class="channel-title">Ubicación & Modalidad</span>
+                  <span class="channel-value text-slate-300">Madrid, España — Proyectos remotos a nivel internacional</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mini FAQ / Garantía -->
+            <div class="contact-guarantee">
+              <i class="fa-solid fa-lock text-cyan"></i>
+              <span>Confidencialidad absoluta: Tus ideas y datos de proyecto se tratarán con total discreción y rigor profesional.</span>
+            </div>
+          </div>
+
+          <!-- Formulario Interactivo -->
+          <div class="contact-form-container">
+            <div class="form-card">
+              <h3 class="form-title">Enviar solicitud de proyecto</h3>
+              <p class="form-subtitle">Rellena el formulario y recibirás una respuesta personalizada.</p>
+
+              <form id="contactForm" class="contact-form" novalidate>
+                <!-- Nombre -->
+                <div class="form-group">
+                  <label for="name" class="form-label">
+                    <span>Nombre completo o empresa</span> <span class="required">*</span>
+                  </label>
+                  <div class="input-wrapper">
+                    <i class="fa-solid fa-user input-icon"></i>
+                    <input type="text" id="name" name="name" class="form-input" placeholder="Ej. Ana Gómez / Acme Corp" required autocomplete="name" maxlength="120" />
+                  </div>
+                  <div class="form-error" id="nameError"></div>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                  <label for="email" class="form-label">
+                    <span>Correo electrónico de contacto</span> <span class="required">*</span>
+                  </label>
+                  <div class="input-wrapper">
+                    <i class="fa-solid fa-envelope input-icon"></i>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="tu@empresa.com" required autocomplete="email" maxlength="200" />
+                  </div>
+                  <div class="form-error" id="emailError"></div>
+                </div>
+
+                <!-- Tipo de Proyecto -->
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="projectType" class="form-label">Tipo de Solución</label>
+                    <div class="input-wrapper">
+                      <i class="fa-solid fa-layer-group input-icon"></i>
+                      <select id="projectType" name="projectType" class="form-select">
+                        <option value="Desarrollo Web / SaaS a Medida">Desarrollo Web / SaaS a Medida</option>
+                        <option value="API / Backend & Base de Datos">API / Backend & Base de Datos</option>
+                        <option value="Integración Stripe / Pagos">Integración Stripe / Pagos</option>
+                        <option value="Automatización / Bots / APIs">Automatización / Bots / APIs</option>
+                        <option value="Auditoría / Refactorización">Auditoría / Refactorización</option>
+                        <option value="Consultoría Técnica">Consultoría Técnica</option>
+                        <option value="Otro Proyecto Personalizado">Otro Proyecto Personalizado</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <!-- Presupuesto Estimado -->
+                  <div class="form-group">
+                    <label for="budget" class="form-label">Presupuesto Estimado</label>
+                    <div class="input-wrapper">
+                      <i class="fa-solid fa-wallet input-icon"></i>
+                      <select id="budget" name="budget" class="form-select">
+                        <option value="Por definir / A valorar">Por definir / A valorar</option>
+                        <option value="< 1.500 €">&lt; 1.500 € (Alcance puntual)</option>
+                        <option value="1.500 € - 3.500 €">1.500 € - 3.500 €</option>
+                        <option value="3.500 € - 7.000 €">3.500 € - 7.000 €</option>
+                        <option value="> 7.000 €">&gt; 7.000 € (Proyecto integral)</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Mensaje -->
+                <div class="form-group">
+                  <label for="message" class="form-label">
+                    <span>Detalles del proyecto o reto</span> <span class="required">*</span>
+                  </label>
+                  <div class="input-wrapper">
+                    <textarea id="message" name="message" class="form-textarea" rows="4" placeholder="Explícame qué necesitas construir, plazos estimados o qué problema quieres resolver..." required maxlength="3000"></textarea>
+                  </div>
+                  <div class="char-count"><span id="charCount">0</span> / 3000 caracteres</div>
+                  <div class="form-error" id="messageError"></div>
+                </div>
+
+                <!-- Botón de Envío -->
+                <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                  <span class="btn-text">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span>Enviar Mensaje</span>
+                  </span>
+                  <span class="btn-spinner hidden">
+                    <i class="fa-solid fa-circle-notch fa-spin"></i>
+                    <span>Enviando mensaje...</span>
+                  </span>
+                </button>
+
+                <div class="form-status-alert hidden" id="formStatusAlert" role="alert"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================== -->
+  <!-- FOOTER                                                   -->
+  <!-- ======================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#hero" class="brand-logo">
+          <span class="brand-symbol">&lt;/&gt;</span>
+          <span class="brand-name">Jorge Bárcena</span>
+          <span class="brand-sub">.dev</span>
+        </a>
+        <p class="footer-bio">
+          Ingeniero de Software con más de 6 años de experiencia creando soluciones digitales a medida y escalables.
+        </p>
+        <div class="footer-socials">
+          <a href="https://github.com/JorgeBarcena3" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-link">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="mailto:j.barcenalumbreras@gmail.com" aria-label="Email" class="social-link">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          <a href="/JorgeBarcenaActor" aria-label="Faceta de Actor" class="social-link text-accent-gold" title="Ver faceta de Actor">
+            <i class="fa-solid fa-masks-theater"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#propuesta">Propuesta de Valor</a></li>
+          <li><a href="#stack">Tecnologías</a></li>
+          <li><a href="#proceso">Metodología</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav">
+        <h4>Faceta Artística</h4>
+        <ul>
+          <li><a href="/JorgeBarcenaActor">🎭 Portfolio de Actor</a></li>
+          <li><a href="/JorgeBarcenaActor#videobook">Videobook & Clips</a></li>
+          <li><a href="/JorgeBarcenaActor#obras">Espectáculos</a></li>
+          <li><a href="/JorgeBarcenaActor#contacto">Contacto Escénico</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div class="footer-copy">
+        &copy; <span id="currentYear">2026</span> Jorge Bárcena. Todos los derechos reservados.
+      </div>
+      <div class="footer-tagline">
+        Hecho con código limpio, arquitectura sólida y pasión por la tecnología.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Script Principal -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

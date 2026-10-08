@@ -1,0 +1,13 @@
+services:
+  jorgebarcena-dev:
+    build:
+      context: .
+    container_name: jorgebarcena_dev
+    restart: always
+    ports:
+      - "127.0.0.1:6688:6688"
+    environment:
+      - PORT=6688
+      - NODE_ENV=production
+    volumes:
+      - ./contacto:/app/contacto
