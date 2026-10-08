@@ -2,12 +2,19 @@ services:
   jorgebarcena-dev:
     build:
       context: .
+      dockerfile: Dockerfile
     container_name: jorgebarcena_dev
     restart: always
     ports:
-      - "127.0.0.1:6688:6688"
+      - "${PORT:-6688}:6688"
     environment:
       - PORT=6688
       - NODE_ENV=production
     volumes:
       - ./contacto:/app/contacto
+    healthcheck:
+      test: ["CMD-SHELL", "wget --no-verbose --tries=1 --spider http://127.0.0.1:6688/health || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 5s
