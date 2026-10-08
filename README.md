@@ -4,7 +4,7 @@ Web profesional y portfolio de **Jorge Bárcena**, Ingeniero de Software con má
 
 URL de producción: **[https://dev.jorgebarcena.es](https://dev.jorgebarcena.es)**
 
-Este proyecto complementa y se enlaza de forma fluida con su faceta artística de actor e improvisador teatral disponible en **`/JorgeBarcenaActor`**.
+Este proyecto complementa y se enlaza de forma fluida con su faceta artística de actor e improvisador teatral disponible en **[https://jorgebarcena.es](https://jorgebarcena.es)**.
 
 ---
 
@@ -15,7 +15,7 @@ Este proyecto complementa y se enlaza de forma fluida con su faceta artística d
   - Estética *Dark Mode* tecnológica (tonos slate, cyan y acentos oro para la faceta actoral).
   - Terminal interactiva con perfil, stack tecnológico y copia de correo con 1 clic.
   - Notificaciones Toast personalizadas y validación de formularios en tiempo real.
-  - Conexión cruzada con la faceta de actor (`/JorgeBarcenaActor`).
+  - Conexión cruzada con la web de actor ([jorgebarcena.es](https://jorgebarcena.es)).
   - Accesibilidad semántica y metadatos SEO / Open Graph estructurados (Schema.org Person).
 
 - **Backend Robusto & Ligero (Node.js / Express):**
@@ -102,7 +102,7 @@ docker compose logs -f
 Jorge Bárcena une dos mundos creativos y metódicos:
 1. **Ingeniero de Software:** Más de 6 años creando soluciones a medida, arquitectura limpia y código escalable.
 2. **Actor e Improvisador:** Formado en interpretación teatral, aplicando la escucha activa, la resolución ágil de imprevistos y la comunicación empática al desarrollo de software.
-   - Web de actor: [`/JorgeBarcenaActor`](/JorgeBarcenaActor)
+   - Web oficial de actor: [https://jorgebarcena.es](https://jorgebarcena.es)
 
 ---
 
