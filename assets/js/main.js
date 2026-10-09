@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
   copyButtons.forEach(btn => {
     btn.addEventListener('click', async (e) => {
       e.preventDefault();
-      const email = btn.getAttribute('data-email') || 'j.barcenalumbreras@gmail.com';
+      const email = btn.getAttribute('data-email') || 'hola@jorgebarcena.es';
       try {
         await navigator.clipboard.writeText(email);
         showToast('Correo copiado al portapapeles: ' + email, 'success');
@@ -231,7 +231,7 @@ document.addEventListener('DOMContentLoaded', () => {
         formStatusAlert.className = 'form-status-alert error';
         formStatusAlert.innerHTML = `
           <i class="fa-solid fa-triangle-exclamation"></i> No se pudo conectar con el servidor. Si persiste, escríbeme directamente a 
-          <a href="mailto:j.barcenalumbreras@gmail.com" style="text-decoration: underline;">j.barcenalumbreras@gmail.com</a>.
+          <a href="mailto:hola@jorgebarcena.es" style="text-decoration: underline;">hola@jorgebarcena.es</a>.
         `;
         showToast('Error de red al conectar con el servidor.', 'error');
       } finally {

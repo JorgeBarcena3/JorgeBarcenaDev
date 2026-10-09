@@ -118,5 +118,5 @@ Jorge Bárcena une dos mundos creativos y metódicos:
 
 ## 📬 Contacto
 
-- **Email:** [j.barcenalumbreras@gmail.com](mailto:j.barcenalumbreras@gmail.com)
+- **Email:** [hola@jorgebarcena.es](mailto:hola@jorgebarcena.es)
 - **GitHub:** [github.com/JorgeBarcena3](https://github.com/JorgeBarcena3)

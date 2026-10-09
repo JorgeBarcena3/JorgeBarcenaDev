@@ -18,7 +18,7 @@
     "react",
     "madrid"
   ],
-  "author": "Jorge Bárcena <j.barcenalumbreras@gmail.com>",
+  "author": "Jorge Bárcena <hola@jorgebarcena.es>",
   "license": "MIT",
   "dependencies": {
     "compression": "^1.8.2",
