@@ -172,27 +172,25 @@
   }
   </script>
 </head>
-<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-slate-950">
+<body class="antialiased selection:bg-orange-100 selection:text-orange-950">
 
   <!-- ======================================================== -->
   <!-- NAVEGACIÓN PRINCIPAL                                     -->
   <!-- ======================================================== -->
   <header class="site-header" id="header">
     <div class="container header-container">
-      <a href="#hero" class="brand-logo" aria-label="Jorge Bárcena — Inicio">
-        <span class="brand-symbol">&lt;/&gt;</span>
-        <span class="brand-name">Jorge Bárcena</span>
+      <a href="#hero" class="brand-logo" aria-label="Jorge Bárcena — tech.jorgebarcena.es">
+        <span class="brand-symbol">&lt;jb/&gt;</span>
+        <span class="brand-name">tech.jorgebarcena.es</span>
       </a>
 
       <!-- Menú Desktop -->
       <nav class="nav-desktop" aria-label="Navegación principal">
         <ul class="nav-links">
-          <li><a href="#servicios" class="nav-link">Servicios</a></li>
-          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-          <li><a href="#propuesta" class="nav-link">Propuesta</a></li>
-          <li><a href="#stack" class="nav-link">Stack</a></li>
-          <li><a href="#proceso" class="nav-link">Proceso</a></li>
-          <li><a href="#doble-faceta" class="nav-link">Doble Faceta</a></li>
+          <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+          <li><a href="#especialidades" class="nav-link">Especialidades</a></li>
+          <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
         </ul>
       </nav>
 
@@ -219,22 +217,14 @@
     <!-- Menú Móvil Desplegable -->
     <div class="mobile-nav" id="mobileNav">
       <ul class="mobile-nav-links">
-        <li><a href="#servicios" class="mobile-link">Servicios a medida</a></li>
-        <li><a href="#portfolio" class="mobile-link">Portfolio de Proyectos</a></li>
-        <li><a href="#propuesta" class="mobile-link">Propuesta de valor</a></li>
-        <li><a href="#stack" class="mobile-link">Stack & Tecnologías</a></li>
-        <li><a href="#proceso" class="mobile-link">Metodología de trabajo</a></li>
-        <li><a href="#doble-faceta" class="mobile-link">Software + Actuación</a></li>
-        <li><a href="#contacto" class="mobile-link">Iniciar Proyecto</a></li>
+        <li><a href="#proyectos" class="mobile-link">Proyectos en producción</a></li>
+        <li><a href="#especialidades" class="mobile-link">Especialidades técnicas</a></li>
+        <li><a href="#sobre-mi" class="mobile-link">Sobre mí &amp; Stack</a></li>
+        <li><a href="#contacto" class="mobile-link">Contacto directo</a></li>
         <li class="mobile-divider"></li>
         <li>
           <a href="https://github.com/JorgeBarcena3" target="_blank" rel="noopener noreferrer" class="mobile-link" style="display: flex; align-items: center; gap: 0.6rem;">
             <i class="fa-brands fa-github"></i> <span>GitHub (JorgeBarcena3)</span> <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem; margin-left: auto;"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://jorgebarcena.es" target="_blank" rel="noopener noreferrer" class="mobile-actor-link">
-            <i class="fa-solid fa-masks-theater"></i> Ver web de Actor (jorgebarcena.es) <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem; margin-left: auto;"></i>
           </a>
         </li>
       </ul>
@@ -246,101 +236,83 @@
     <!-- HERO SECTION                                             -->
     <!-- ======================================================== -->
     <section class="hero-section" id="hero">
-      <div class="hero-bg-glow"></div>
-      <div class="hero-grid-pattern"></div>
-
       <div class="container hero-container">
         <div class="hero-content">
           <div class="experience-pill">
-            <i class="fa-solid fa-shield-halved text-cyan"></i>
-            <span>+6 años de experiencia en desarrollo de software</span>
+            <i class="fa-solid fa-cube text-orange"></i>
+            <span>Software Engineer &amp; Soluciones a Medida · Madrid</span>
           </div>
 
           <h1 class="hero-title">
-            Creo <span class="gradient-text">soluciones de software personalizadas</span> para tu empresa o proyecto.
+            Construyo software robusto con criterio técnico y visión de producto.
           </h1>
 
           <p class="hero-lead">
-            Ayudo a compañías, startups y profesionales a transformar necesidades complejas en sistemas web robustos, rápidos y escalables. Sin plantillas genéricas: desarrollo pensado para los objetivos reales de tu negocio.
+            Ayudo a empresas, startups y proyectos a desarrollar plataformas web escalables, arquitecturas backend e integraciones críticas. Más de 6 años llevando software a producción con código limpio, transparencia y sin rodeos corporativos.
           </p>
 
           <div class="hero-cta-group">
-            <a href="#contacto" class="btn btn-primary btn-lg">
-              <i class="fa-solid fa-comments"></i>
-              <span>Cuéntame tu proyecto</span>
-            </a>
-            <a href="#portfolio" class="btn btn-secondary btn-lg">
+            <a href="#proyectos" class="btn btn-primary btn-lg">
               <i class="fa-solid fa-laptop-code"></i>
-              <span>Ver Portfolio &amp; Casos Reales</span>
+              <span>Explorar Proyectos Reales</span>
             </a>
+            <button class="btn btn-secondary btn-lg copy-email-btn" id="copyEmailHeroBtn" data-email="j.barcenalumbreras@gmail.com" title="Copiar correo electrónico">
+              <i class="fa-regular fa-copy"></i>
+              <span class="copy-email-full">j.barcenalumbreras@gmail.com</span>
+              <span class="copy-email-short">Copiar email</span>
+            </button>
           </div>
 
           <!-- Quick trust badges -->
           <div class="hero-highlights">
             <div class="highlight-item">
-              <i class="fa-solid fa-check text-cyan"></i>
-              <span>Desarrollo End-to-End</span>
+              <i class="fa-solid fa-check text-orange"></i>
+              <span>Código 100% de tu propiedad</span>
             </div>
             <div class="highlight-item">
-              <i class="fa-solid fa-check text-cyan"></i>
-              <span>Arquitectura Limpia & Escalable</span>
+              <i class="fa-solid fa-check text-orange"></i>
+              <span>Arquitectura limpia &amp; escalable</span>
             </div>
             <div class="highlight-item">
-              <i class="fa-solid fa-check text-cyan"></i>
-              <span>Comunicación directa y clara</span>
+              <i class="fa-solid fa-check text-orange"></i>
+              <span>Trato directo sin intermediarios</span>
             </div>
           </div>
         </div>
 
-        <!-- Terminal & Profile Card -->
+        <!-- Bento Hero Card (Producción Real) -->
         <div class="hero-visual">
-          <div class="tech-card-wrapper">
-            <div class="terminal-card">
-              <div class="terminal-header">
-                <div class="terminal-dots">
-                  <span class="dot red"></span>
-                  <span class="dot yellow"></span>
-                  <span class="dot green"></span>
-                </div>
-                <div class="terminal-title">dev.jorgebarcena.es — perfil profesional</div>
+          <div class="hero-bento-card">
+            <div class="bento-header">
+              <div class="bento-tag">Foco de Producción</div>
+              <div class="bento-location"><i class="fa-solid fa-location-dot"></i> Madrid · UTC+1</div>
+            </div>
+
+            <div class="bento-featured-box">
+              <div class="bento-featured-label">
+                <span>Proyecto Destacado Activo</span>
+                <a href="https://nosaptc.com" target="_blank" rel="noopener noreferrer" class="bento-ext-link" title="Visitar nosaptc.com">En Vivo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
               </div>
-              <div class="terminal-body">
-                <div class="profile-card-top">
-                  <div class="avatar-frame">
-                    <img src="assets/images/jorge.png" alt="Jorge Bárcena — Desarrollador de Software" class="profile-photo" width="76" height="76" fetchpriority="high" />
-                    <span class="avatar-badge" title="Full Stack">JS/TS</span>
-                  </div>
-                  <div class="profile-quick-info">
-                    <div class="profile-name">Jorge Bárcena</div>
-                    <p class="profile-role">Software Engineer & Solution Builder</p>
-                    <div class="profile-tags">
-                      <span class="tag">Madrid, ES</span>
-                      <span class="tag">Remoto / Híbrido</span>
-                    </div>
-                  </div>
-                </div>
+              <div class="bento-featured-title">NosApetece (nosaptc.com)</div>
+              <p class="bento-featured-desc">
+                Plataforma colaborativa para la industria de la música en vivo en España: gestión de bolos, catálogo de salas y asesoría jurídica especializada.
+              </p>
+              <div class="bento-tags">
+                <span class="btag">Node.js</span>
+                <span class="btag">React</span>
+                <span class="btag">PostgreSQL</span>
+                <span class="btag">Docker</span>
+              </div>
+            </div>
 
-                <div class="terminal-code">
-                  <div class="code-line"><span class="token-keyword">const</span> <span class="token-var">developer</span> = {</div>
-                  <div class="code-line indent"><span class="token-prop">web</span>: <span class="token-string">&quot;dev.jorgebarcena.es&quot;</span>,</div>
-                  <div class="code-line indent"><span class="token-prop">experiencia</span>: <span class="token-string">"6+ años en producción"</span>,</div>
-                  <div class="code-line indent"><span class="token-prop">misión</span>: <span class="token-string">"Digitalizar & potenciar negocios"</span>,</div>
-                  <div class="code-line indent"><span class="token-prop">especialidad</span>: [<span class="token-string">"FullStack"</span>, <span class="token-string">"APIs"</span>, <span class="token-string">"Stripe"</span>, <span class="token-string">"SaaS"</span>],</div>
-                  <div class="code-line indent"><span class="token-prop">otraPasion</span>: <span class="token-link">&quot;<a href="https://jorgebarcena.es" target="_blank" rel="noopener noreferrer" title="Visitar web oficial de Actor en jorgebarcena.es">Actor (jorgebarcena.es)</a>&quot;</span>,</div>
-                  <div class="code-line indent"><span class="token-prop">estado</span>: <span class="token-string text-green">&quot;Listo para tu próximo reto&quot;</span></div>
-                  <div class="code-line">};</div>
-                </div>
-
-                <div class="profile-actions-bar">
-                  <button class="copy-email-btn" id="copyEmailHeroBtn" data-email="j.barcenalumbreras@gmail.com" title="Copiar correo">
-                    <i class="fa-regular fa-copy"></i>
-                    <span class="copy-email-full">Copiar j.barcenalumbreras@gmail.com</span>
-                    <span class="copy-email-short">Copiar email</span>
-                  </button>
-                  <a href="https://github.com/JorgeBarcena3" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub">
-                    <i class="fa-brands fa-github"></i>
-                  </a>
-                </div>
+            <div class="bento-grid-mini">
+              <div class="bento-mini-item">
+                <span class="bento-mini-label">Disponibilidad</span>
+                <span class="bento-mini-val text-green">● Evaluando proyectos</span>
+              </div>
+              <div class="bento-mini-item">
+                <span class="bento-mini-label">Stack Núcleo</span>
+                <span class="bento-mini-val">Full-Stack / TypeScript / Cloud</span>
               </div>
             </div>
           </div>
