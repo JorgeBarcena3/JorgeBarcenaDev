@@ -1,53 +1,51 @@
 /* ========================================================
-   VARIABLES DE DISEÑO & TEMAS
+   VARIABLES DE DISEÑO & TEMAS (Warm White & Terracotta)
    ======================================================== */
 :root {
-  --bg-primary: #070b14;
-  --bg-secondary: #0d1527;
-  --bg-card: rgba(15, 23, 42, 0.75);
-  --bg-card-hover: rgba(30, 41, 59, 0.85);
-  --bg-input: rgba(15, 23, 42, 0.9);
+  --bg-primary: #faf8f5;
+  --bg-secondary: #ffffff;
+  --bg-card: #ffffff;
+  --bg-card-hover: #fdfbf7;
+  --bg-input: #ffffff;
+  --bg-subtle: #f5f5f4;
 
-  --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-highlight: rgba(56, 189, 248, 0.35);
-  --border-active: #38bdf8;
+  --border-subtle: #e7e5e4;
+  --border-highlight: #d6d3d1;
+  --border-active: #ea580c;
 
-  --text-main: #f8fafc;
-  --text-muted: #94a3b8;
-  --text-dim: #64748b;
+  --text-main: #1c1917;
+  --text-muted: #57534e;
+  --text-dim: #78716c;
 
-  --accent-cyan: #38bdf8;
-  --accent-cyan-dark: #0284c7;
-  --accent-indigo: #6366f1;
-  --accent-purple: #8b5cf6;
-  --accent-emerald: #10b981;
-  --accent-amber: #f59e0b;
-  --accent-gold: #fbbf24;
+  --accent-orange: #ea580c;
+  --accent-orange-hover: #c2410c;
+  --accent-orange-light: #fff7ed;
+  --accent-orange-border: #ffedd5;
+  --accent-emerald: #059669;
+  --accent-emerald-light: #ecfdf5;
 
-  /* UI/UX Pro Max Design System Tokens */
-  --color-primary: #2563EB;
-  --color-primary-hover: #1d4ed8;
-  --color-secondary: #3B82F6;
-  --color-accent: #EA580C;
-  --color-accent-hover: #c2410c;
-  --color-muted: #E9EFF8;
-  --color-border: #E2E8F0;
+  --accent-cyan: #0284c7;
+  --accent-indigo: #4f46e5;
+  --accent-purple: #7c3aed;
+  --accent-amber: #d97706;
+  --accent-gold: #b45309;
 
   --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 
   --radius-sm: 8px;
-  --radius-md: 14px;
-  --radius-lg: 20px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
   --radius-full: 9999px;
 
-  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
-  --shadow-glow: 0 0 35px rgba(56, 189, 248, 0.15);
-  --shadow-glow-indigo: 0 0 35px rgba(99, 102, 241, 0.2);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.03);
+  --shadow-md: 0 4px 14px -2px rgba(0, 0, 0, 0.06), 0 2px 6px -1px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 12px 30px -4px rgba(0, 0, 0, 0.08);
+  --shadow-glow: none;
+  --shadow-glow-indigo: none;
 
-  --transition-fast: 0.18s cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-normal: 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ========================================================
@@ -61,7 +59,7 @@
 
 html {
   font-family: var(--font-sans);
-  color-scheme: dark;
+  color-scheme: light;
   scroll-behavior: smooth;
   scroll-padding-top: 90px;
   max-width: 100%;
@@ -718,15 +716,7 @@ code {
 }
 
 .hero-bg-glow {
-  position: absolute;
-  top: -150px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 800px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(56, 189, 248, 0.12) 0%, rgba(99, 102, 241, 0.08) 50%, transparent 80%);
-  pointer-events: none;
-  z-index: 0;
+  display: none !important;
 }
 
 .hero-grid-pattern {
@@ -1422,21 +1412,7 @@ code {
 }
 
 .portfolio-card-glow {
-  position: absolute;
-  top: -60px;
-  right: -60px;
-  width: 140px;
-  height: 140px;
-  background: radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, transparent 70%);
-  border-radius: 50%;
-  pointer-events: none;
-  transition: all 0.3s ease;
-}
-
-.portfolio-card:hover .portfolio-card-glow {
-  width: 180px;
-  height: 180px;
-  background: radial-gradient(circle, rgba(56, 189, 248, 0.25) 0%, rgba(37, 99, 235, 0.1) 50%, transparent 70%);
+  display: none !important;
 }
 
 .portfolio-card-header {
