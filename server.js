@@ -182,7 +182,7 @@ async function sendTelegramNotification({ name, email, projectType, budget, mess
   }
 
   const textLines = [
-    '📬 <b>Nueva solicitud de contacto — dev.jorgebarcena.es</b>',
+    '📬 <b>Nueva solicitud de contacto — tech.jorgebarcena.es</b>',
     '',
     `👤 <b>Nombre:</b> ${escapeTelegramHtml(name)}`,
     `📧 <b>Email:</b> ${escapeTelegramHtml(email)}`,
@@ -359,5 +359,5 @@ app.use((err, req, res, next) => {
 // Inicio del Servidor
 // ============================================
 app.listen(PORT, () => {
-  console.log(`✓ Servidor dev.jorgebarcena.es activo en http://localhost:${PORT} [${isProd ? 'production' : 'development'}]`);
+  console.log(`✓ Servidor tech.jorgebarcena.es activo en http://localhost:${PORT} [${isProd ? 'production' : 'development'}]`);
 });

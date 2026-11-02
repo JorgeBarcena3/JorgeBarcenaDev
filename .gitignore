@@ -12,3 +12,4 @@ contacto/*.txt
 __pycache__/
 *.pyc
 .env
+.superpowers/
