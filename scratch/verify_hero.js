@@ -18,8 +18,8 @@ if (!html.includes('href="#proyectos"') || !html.includes('href="#especialidades
   errors.push("Navigation links do not match the required 4 sections (#proyectos, #especialidades, #sobre-mi, #contacto)");
 }
 
-if (!html.includes('hero-bento-card') && !html.includes('hero-bento')) {
-  errors.push("Missing hero bento production card");
+if (!html.includes('hero-portrait-card') && !html.includes('hero-visual')) {
+  errors.push("Missing hero visual portrait card");
 }
 
 if (errors.length > 0) {

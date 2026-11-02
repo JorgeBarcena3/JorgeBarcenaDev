@@ -858,7 +858,7 @@ code {
 
 .hero-portrait-img {
   width: 100%;
-  height: 380px;
+  height: 440px;
   object-fit: cover;
   object-position: center 15%;
   display: block;
@@ -915,6 +915,12 @@ code {
   padding: 0.28rem 0.65rem;
   border-radius: var(--radius-full);
   border: 1px solid #a7f3d0;
+}
+
+@media (max-width: 991px) {
+  .hero-portrait-img {
+    height: 380px;
+  }
 }
 
 @media (max-width: 640px) {
