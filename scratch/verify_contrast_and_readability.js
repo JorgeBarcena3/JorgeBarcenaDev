@@ -48,6 +48,11 @@ if (css.match(/\.cookie-pref-item\s*\{[^}]*background:\s*rgba\(15,\s*23,\s*42/))
   errors.push('.cookie-pref-item has dark background rgba(15, 23, 42)');
 }
 
+// 9. site-footer no debe tener fondo oscuro
+if (css.match(/\.site-footer\s*\{[^}]*background:\s*#04070e/)) {
+  errors.push('.site-footer has dark background #04070e');
+}
+
 if (errors.length > 0) {
   console.error('FAIL - Readability and contrast issues detected:');
   errors.forEach(err => console.error('  - ' + err));
