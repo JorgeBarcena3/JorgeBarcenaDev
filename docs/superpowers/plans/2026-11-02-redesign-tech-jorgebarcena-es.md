@@ -249,3 +249,4 @@ rm -rf scratch/
 git add server.js sitemap.xml robots.txt site.webmanifest package.json index.html
 git commit -m "feat(domain): complete migration to tech.jorgebarcena.es across all metadata and server"
 ```
+

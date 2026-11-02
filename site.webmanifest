@@ -4,8 +4,8 @@
   "description": "Portfolio y servicios profesionales de desarrollo de software a medida y consultoría técnica.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#030712",
-  "theme_color": "#030712",
+  "background_color": "#faf8f5",
+  "theme_color": "#faf8f5",
   "icons": [
     {
       "src": "/assets/images/favicon-16x16.png",

@@ -4,26 +4,26 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
-    <loc>https://dev.jorgebarcena.es/</loc>
-    <lastmod>2026-10-08</lastmod>
+    <loc>https://tech.jorgebarcena.es/</loc>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://dev.jorgebarcena.es/aviso-legal</loc>
-    <lastmod>2026-10-08</lastmod>
+    <loc>https://tech.jorgebarcena.es/aviso-legal</loc>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://dev.jorgebarcena.es/privacidad</loc>
-    <lastmod>2026-10-08</lastmod>
+    <loc>https://tech.jorgebarcena.es/privacidad</loc>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://dev.jorgebarcena.es/cookies</loc>
-    <lastmod>2026-10-08</lastmod>
+    <loc>https://tech.jorgebarcena.es/cookies</loc>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>

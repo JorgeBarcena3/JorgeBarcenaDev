@@ -1,22 +1,21 @@
-# 💻 Jorge Bárcena — Software Engineer & Tech Consultant (dev.jorgebarcena.es)
+# 💻 Jorge Bárcena — Software Engineer & Tech Consultant (tech.jorgebarcena.es)
 
 Web profesional y portfolio de **Jorge Bárcena**, Ingeniero de Software con más de 6 años de experiencia creando soluciones de software personalizadas, plataformas SaaS, APIs de alto rendimiento y arquitecturas web para empresas y proyectos.
 
-URL de producción: **[https://dev.jorgebarcena.es](https://dev.jorgebarcena.es)**
-
-Este proyecto complementa y se enlaza de forma fluida con su faceta artística de actor e improvisador teatral disponible en **[https://jorgebarcena.es](https://jorgebarcena.es)**.
+URL de producción: **[https://tech.jorgebarcena.es](https://tech.jorgebarcena.es)**
 
 ---
 
 ## 🚀 Características Principales
 
-- **Frontend Moderno & Alto Rendimiento:**
+- **Frontend Editorial & Alto Rendimiento:**
   - Diseño responsive y optimizado para escritorio, tablet y móvil.
-  - Estética *Dark Mode* tecnológica (tonos slate, cyan y acentos oro para la faceta actoral).
-  - Terminal interactiva con perfil, stack tecnológico y copia de correo con 1 clic.
-  - Notificaciones Toast personalizadas y validación de formularios en tiempo real.
-  - Conexión cruzada con la web de actor ([jorgebarcena.es](https://jorgebarcena.es)).
-  - Accesibilidad semántica y metadatos SEO / Open Graph estructurados (Schema.org Person).
+  - Estética *Warm Paper / White & Terracotta* (blanco cálido `#faf8f5`, texto carbón `#1c1917` y acentos naranja `#ea580c`).
+  - Hero Bento con disponibilidad en vivo, zona horaria de producción (Madrid UTC+1) y proyecto destacado NosApetece.
+  - Portfolio enfocado en 5 proyectos reales de software (NosApetece, CLOOB Football, Silla De Más, Inés Alba, Malvadas Ardillas).
+  - Sección Sobre mí con criterio técnico, stack sintético y nota personal sobre interpretación con enlace a [jorgebarcena.es](https://jorgebarcena.es).
+  - Formulario de contacto interactivo conectado con Express y Telegram.
+  - Accesibilidad semántica, metadatos SEO / Open Graph y datos estructurados Schema.org (`WebSite`, `Person`, `ProfessionalService`).
 
 - **Backend Robusto & Ligero (Node.js / Express):**
   - Servidor Express en `server.js` con cabeceras de seguridad HTTP (`nosniff`, `SAMEORIGIN`, `strict-origin`, etc.).

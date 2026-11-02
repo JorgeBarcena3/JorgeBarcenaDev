@@ -1,4 +1,4 @@
-# Robots.txt para dev.jorgebarcena.es
+# Robots.txt para tech.jorgebarcena.es
 # Jorge Bárcena — Ingeniero de Software & Consultor Tecnológico
 
 User-agent: *
@@ -8,7 +8,7 @@ Disallow: /health
 Disallow: /contacto/
 
 # Host de referencia
-Host: https://dev.jorgebarcena.es
+Host: https://tech.jorgebarcena.es
 
 # Índice de Sitemap
-Sitemap: https://dev.jorgebarcena.es/sitemap.xml
+Sitemap: https://tech.jorgebarcena.es/sitemap.xml
