@@ -2297,16 +2297,16 @@ code {
 }
 
 .channel-card:hover {
-  border-color: rgba(56, 189, 248, 0.3);
+  border-color: var(--border-highlight);
 }
 
 .channel-icon {
   width: 42px;
   height: 42px;
   border-radius: var(--radius-sm);
-  background: rgba(56, 189, 248, 0.1);
-  border: 1px solid rgba(56, 189, 248, 0.25);
-  color: var(--accent-cyan);
+  background: var(--accent-orange-light);
+  border: 1px solid var(--accent-orange-border);
+  color: var(--accent-orange);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2340,13 +2340,13 @@ code {
 }
 
 .channel-value:hover {
-  color: var(--accent-cyan);
+  color: var(--accent-orange);
 }
 
 .copy-small-btn {
   background: transparent;
   border: none;
-  color: var(--accent-cyan);
+  color: var(--accent-orange);
   font-size: 0.78rem;
   cursor: pointer;
   padding: 0;
@@ -2368,7 +2368,7 @@ code {
   gap: 0.65rem;
   font-size: 0.85rem;
   color: var(--text-muted);
-  background: rgba(15, 23, 42, 0.6);
+  background: #ffffff;
   border: 1px solid var(--border-subtle);
   padding: 0.85rem 1rem;
   border-radius: var(--radius-sm);
@@ -2452,11 +2452,11 @@ code {
 .form-label {
   font-size: 0.88rem;
   font-weight: 600;
-  color: #cbd5e1;
+  color: var(--text-main);
 }
 
 .required {
-  color: #f43f5e;
+  color: #ea580c;
 }
 
 .input-wrapper {
@@ -2475,14 +2475,14 @@ code {
 
 .form-input, .form-select, .form-textarea {
   width: 100%;
-  background: var(--bg-input);
+  background: #ffffff;
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
   padding: 0.75rem 1rem 0.75rem 2.6rem;
   font-size: 0.92rem;
   color: var(--text-main);
   transition: all var(--transition-fast);
-  accent-color: var(--accent-cyan);
+  accent-color: var(--accent-orange);
 }
 
 .form-textarea {
@@ -2493,9 +2493,9 @@ code {
 
 .form-input:focus, .form-select:focus, .form-textarea:focus {
   outline: none;
-  border-color: var(--accent-cyan);
-  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
-  background: rgba(15, 23, 42, 0.95);
+  border-color: var(--accent-orange);
+  box-shadow: 0 0 0 3px rgba(234, 88, 12, 0.15);
+  background: #ffffff;
 }
 
 .form-input.invalid, .form-textarea.invalid {
