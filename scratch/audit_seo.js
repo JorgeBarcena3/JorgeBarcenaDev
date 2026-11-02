@@ -201,3 +201,4 @@ if (passedChecks === totalChecks) {
   console.error(`❌ ESTADO: Se encontraron ${totalChecks - passedChecks} puntos de mejora.`);
   process.exit(1);
 }
+

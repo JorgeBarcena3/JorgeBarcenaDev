@@ -36,3 +36,4 @@ if (errors.length > 0) {
   console.log("PASS - CSS tokens verified correctly");
   process.exit(0);
 }
+

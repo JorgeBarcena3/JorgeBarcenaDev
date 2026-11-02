@@ -51,3 +51,4 @@ if (errors.length > 0) {
 } else {
   console.log('PASS - Contact and Legal pages verified successfully');
 }
+

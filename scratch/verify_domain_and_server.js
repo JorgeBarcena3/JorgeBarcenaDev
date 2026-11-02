@@ -56,3 +56,4 @@ if (errors.length > 0) {
 } else {
   console.log('PASS - Domain migration and server configuration verified successfully');
 }
+

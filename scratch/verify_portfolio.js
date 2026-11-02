@@ -48,3 +48,4 @@ if (errors.length > 0) {
   console.log("PASS - Portfolio with 5 real projects verified");
   process.exit(0);
 }
+

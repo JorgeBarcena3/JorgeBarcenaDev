@@ -29,3 +29,4 @@ if (errors.length > 0) {
   console.log("PASS - Hero and Header structure verified");
   process.exit(0);
 }
+

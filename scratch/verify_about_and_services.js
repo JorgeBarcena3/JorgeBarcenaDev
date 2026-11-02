@@ -64,3 +64,4 @@ if (errors.length > 0) {
   console.log("PASS - Streamlined Especialidades and Sobre mí sections verified");
   process.exit(0);
 }
+
