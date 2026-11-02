@@ -457,9 +457,6 @@ code {
 }
 
 @media (max-width: 768px) {
-  .brand-symbol {
-    display: none;
-  }
   .header-social-link {
     display: none;
   }
@@ -475,12 +472,17 @@ code {
     gap: 0.5rem;
   }
   .brand-logo {
-    font-size: 1.12rem;
-    gap: 0;
+    font-size: 1.05rem;
+    gap: 0.45rem;
+    display: inline-flex;
+    align-items: center;
     flex-shrink: 1;
   }
   .brand-symbol {
-    display: none;
+    display: inline-flex;
+    font-size: 0.78rem;
+    padding: 0.15rem 0.45rem;
+    border-radius: 6px;
   }
   .brand-name {
     white-space: nowrap;
@@ -833,6 +835,92 @@ code {
   font-size: 0.88rem;
   font-weight: 500;
   color: var(--text-muted);
+}
+
+.hero-visual {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Tarjeta Fotográfica de Autor */
+.hero-portrait-card {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-md);
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero-portrait-img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  object-position: center 15%;
+  display: block;
+  transition: transform var(--transition-normal);
+}
+
+.hero-portrait-card:hover .hero-portrait-img {
+  transform: scale(1.02);
+}
+
+.hero-portrait-badge {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(231, 229, 228, 0.9);
+  border-radius: var(--radius-md);
+  padding: 0.85rem 1.15rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.portrait-badge-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.portrait-badge-name {
+  font-size: 0.98rem;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+.portrait-badge-role {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent-orange);
+}
+
+.portrait-badge-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent-emerald);
+  background: var(--accent-emerald-light);
+  padding: 0.28rem 0.65rem;
+  border-radius: var(--radius-full);
+  border: 1px solid #a7f3d0;
+}
+
+@media (max-width: 640px) {
+  .hero-portrait-img {
+    height: 320px;
+  }
 }
 
 /* Bento Card en Hero */
